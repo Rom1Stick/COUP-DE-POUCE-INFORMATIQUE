@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="reset.css">
 </head>
 
-<body class="container-fluid">
+<body>
 
 <!-- HEADER : START -->
 
@@ -19,15 +19,85 @@
 
 <!-- NAV : START  -->
 
-  <nav>
+  <nav class="navbar navbar-light  fixed-top">
+    <div class="container-fluid">
+      <span>
+        <a href="https://ville-cremieu.fr/" class="navbar-brand">
+          <img src="https://www.ville-cremieu.fr/wp-content/uploads/2020/02/logo_header_pc2c.jpg" 
+                alt="Logo ville de Cremieu - Association Coup de Pouce Informatique"
+                  class="img-fluid navbar_Logo">
+        </a>
+      </span>
 
-    <span>
-      <img src="https://www.ville-cremieu.fr/wp-content/uploads/2020/02/logo_header_pc2c.jpg" 
-            alt="Logo ville de Cremieu - Association Coup de Pouce Informatique"
-              class="img-fluid navbar_Logo">
-    </span>
+      <button 
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offCanvasNavbar"
+        aria-controls="offCanvasNavbar">
+              
+        <span class="navbar-toggler-icon"></span> 
 
-    <div class="test"></div>
+      </button>
+
+      <div 
+        class="offcanvas offcanvas-end" 
+        tabindex="-1" 
+        id="offCanvasNavbar"
+        aria-labelledby="offCanvasNavbarLabel">
+
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="offCanvasNavbarLabel">Coup de pouce Informatique</h1>
+
+          <button 
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close">
+          </button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 ms-1">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                href="#" 
+                id="offcanvasNavbarDropdown" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+
+                Evènements
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+
+                <li><a class="dropdown-item" href="#">Actualité</a></li>
+                <li><a class="dropdown-item" href="#">Dernier évènement</a></li>
+                <li><a class="dropdown-item" href="#">Retour sur expérience</a></li>
+
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex mt-2">
+            <input 
+              class="form-control me-2" 
+              type="search" 
+              placeholder="Rechercher une information"
+              aria-label="Search">
+
+            <button type="submit" class="btn btn-outline-succes">Rechercher</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </nav>
   
 <!-- NAV : END -->
