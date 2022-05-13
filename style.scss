@@ -1,7 +1,50 @@
-$background_Color__Main: hsl(0, 100%, 46%);
+// VARIABLE : COVER
+$background_Color__Cover: hsl(179, 54%, 54%);
+$color_Text__Cover: hsl(0, 0%, 100%);
 
+// BODY
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+// NAV
 
 .navbar_Logo {
-  margin-left: 10vw;
+  margin-left: 5vw;
   width: 60vw;
+  border-radius: 5%;
 }
+
+.breadcrumb {
+  font-size: 2vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0;
+}
+
+// FLUX
+
+.flux {
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 0 auto;
+}
+
+// COVER
+
+.cover {
+  display: flex;
+  text-align: center;
+  background-color: $background_Color__Cover;
+}
+
+.cover h1 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  padding: 0.5rem 0;
+  color: $color_Text__Cover;
+}
+
+
