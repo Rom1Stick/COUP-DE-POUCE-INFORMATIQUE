@@ -26,11 +26,11 @@
 
 <!-- NAV : START  -->
 
-  <nav class="navbar navbar-light navbar-expand-lg">
+  <nav class="navbar navbar-light navbar-expand-lg ">
     <div class="container-fluid">
       <span>
-        <a href="https://ville-cremieu.fr/" class="navbar-brand">
-          <img src="resources/images/logo_header.jpg" 
+        <a href="https://ville-cremieu.fr/" class="navbar-brand" target="_blank">
+          <img src="ressources/images/logo_header.jpg" 
                 alt="Logo ville de Cremieu - Association Coup de Pouce Informatique"
                   class="img-fluid navbar_Logo">
         </a>
@@ -97,10 +97,10 @@
             <input 
               class="form-control me-2" 
               type="search" 
-              placeholder="Rechercher une information"
+              placeholder="Rechercher"
               aria-label="Search">
 
-            <button type="submit" class="btn btn-outline-succes">Rechercher</button>
+            <button type="submit" class="btn btn-outline-info">GO</button>
           </form>
         </div>
       </div>
@@ -112,8 +112,12 @@
 
         <ol class="breadcrumb">
 
-          <li class="breadcrumb-item"><a href="#">Cremieu</a></li>
-          <li class="breadcrumb-item"><a href="#">Association</a></li>
+          <li class="breadcrumb-item">
+            <a href="https://ville-cremieu.fr/" target="_blank">Cremieu</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="https://ville-cremieu.fr/jeunesse/associations/" target="_blank">Association</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">Coup de pouce Informatique</li>
         </ol>
       </section>
@@ -132,22 +136,104 @@
 
 <main>
 
+                    <!-- TITLE : START  -->
+  
+  <section class="title">
+    <div class="flux">
+      <div class="title_container"> 
+        
+        <h1>Coup de Pouce Informatique</h1>
+      </div>
+    </div>
+  </section>
+  
+                    <!-- TITLE : END  -->
+
                     <!-- First section : START -->
 
-  <section class="cover">
+  <section class="Card card_Description">
     <div class="flux">
-      <div class="cover_Container__Title"> 
+      <div class="card_Container__Image">
 
-        <h1>Coup de Pouce Informatique</h1>
+        <img src="ressources/images/association_FirstSection_main.jpg" alt="Image association coup de pouce cremieu"
+              class="">
+      </div>
+
+      <div class="card_Container__Text">
+
+        <p>Vous avez des <strong>difficultés</strong> à utiliser les différents <strong>outils informatiques</strong> ?
+        <br/>( ordinateur, tablette, iphone, smartphone, ipad...)</p>
+        <p><strong>Nous pouvons vous aider !</strong></p>
+      </div>
+    </div>
+  </section>
+                    <!-- First section : END  -->
+
+                    <!-- Second section : START  -->
+
+  <section class="Card card_Information">
+    <div class="flux">
+      <div class="card_Container__Text information_Text">
+
+        <p>L’association <strong>« Coup de Pouce Informatique »</strong> vous propose, en autres :</p>
+
+        <button 
+          type="button"
+          class="btn_Info btn btn-info mb-3"
+          data-bs-toggle="modal"
+          data-bs-target="#SBinfo"
+          href="#">
+            Voir nos compétences
+        </button>
       </div>
     </div>
   </section>
 
 </main> 
 
-                    <!-- First section : END  -->
+                    <!-- Second section : END  -->
 
 <!-- MAIN : END  -->
+
+                    <!-- MODAL SKILL : START -->
+<section 
+  class="modal fade"
+  id="SBinfo"
+  tabindex="-1"
+  aria-labelledby="SBinfoTitle"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header position-relative">
+        
+        <img src="ressources/images/coupDePouce_Logo_modal.jpg" alt="logo association informatique cremieu"
+        class="position-absolute top-50 start-50 translate-middle pt-2 pb-2">
+        
+        <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="close"></button>
+      </div>
+      <div class="modal-body">
+          <h2 itemprop="name" class="modal-title text-center text-decoration-underline mt-1">Aide Informatique</h2>
+          <ul itemprop="articleBody" class="text-center">
+            <li>➡️ Initiation et perfectionnement à internet</li>
+            <li>➡️ Bien utiliser une messagerie (les dangers des messages frauduleux
+            : apprendre à les détecter, arnaques, virus…..)</li>
+            <li>➡️ Apprendre à scanner et imprimer</li>
+            <li>➡️ Installer un antivirus, apprendre à protéger ses données….</li>
+            <li>➡️ Apprendre word, excel, powerpoint…</li>
+            <li>➡️ Transférer, classer, des photos ou des documents, créer des dossiers….</li>
+            <li>➡️ bien utiliser les réseaux sociaux (paramétrer correctement son compte)</li>
+            <li>➡️ faire des sauvegardes. Les mises à jour de windows…..</li>
+            <li>➡️ apprendre à faire une annonce pour vendre un objet par exemple !</li>
+          </ul>
+      <div class="modal-footer">
+        <p>Et bien d'autre...</p>
+      </div>
+          
+      </div>
+    </div>
+  </div>
+</section>
+                    <!-- MODAL SKILL : END -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

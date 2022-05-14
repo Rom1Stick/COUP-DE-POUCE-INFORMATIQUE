@@ -21,19 +21,132 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.cover {
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background-color: #4ac9c7;
+  background-color: #369190;
 }
 
-.cover h1 {
+.title .title h1 {
   font-weight: bold;
   font-size: 1.4rem;
   margin-bottom: 0;
   padding: 0.5rem 0;
+  color: white;
+}
+
+.card_Description {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 0 auto 0 auto;
+}
+
+.card_Description .card_Container__Image img {
+  width: 100vw;
+  height: 30vh;
+  margin: -1px 0 0 -1px;
+}
+
+.card_Description .card_Container__Text {
+  display: block;
+  width: 76%;
+  margin: 5vh auto 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  border: solid rgba(66, 179, 177, 0.786) 5px;
+  border-radius: 15%;
+  background-color: azure;
+}
+
+.card_Description .card_Container__Text strong {
+  color: #42b3b1;
+}
+
+.card_Description .card_Container__Text p {
+  font-weight: 900;
+}
+
+.card_Information {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 0 auto 0 auto;
+}
+
+.card_Information .card_Container__Text {
+  display: block;
+  width: 76%;
+  margin: 5vh auto 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  border: solid rgba(66, 179, 177, 0.786) 5px;
+  border-radius: 15%;
+  background-color: azure;
+}
+
+.card_Information .card_Container__Text strong {
+  color: #42b3b1;
+}
+
+.card_Information .card_Container__Text p {
+  font-weight: 900;
+}
+
+.card_Information .card_Container__Text .btn_Info {
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+}
+
+.card_Information .card_Container__Text .btn_Info:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.modal .modal-header img {
+  width: 10vh;
+}
+
+.modal .modal-body {
+  background-color: rgba(66, 179, 177, 0.786);
+}
+
+.modal .modal-body h2 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 900;
+  color: white;
+  margin-bottom: -2vh;
+}
+
+.modal .modal-body ul {
+  display: inline;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 2vh;
+  list-style: none;
+  margin: auto 0 auto 0;
+}
+
+.modal .modal-body ul li {
+  margin-top: 2vh;
+}
+
+.modal .modal-body ul li:last-child {
+  margin-bottom: 5vh;
+}
+
+.modal .modal-footer {
+  display: block;
+  text-align: center;
+}
+
+.modal .modal-footer p {
+  font-size: 1.5rem;
+  font-weight: 900;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

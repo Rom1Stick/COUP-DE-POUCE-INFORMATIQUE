@@ -1,6 +1,41 @@
+// COLOR
+$cyan: hsla(179, 46%, 48%, 0.786);
+$azure: hsl(180, 100%, 97%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
 // VARIABLE : COVER
-$background_Color__Cover: hsl(179, 54%, 54%);
+$background_Color__Cover: hsl(179, 46%, 39%);
 $color_Text__Cover: hsl(0, 0%, 100%);
+// VARIABLE : CARD
+$card_Color__Strong: hsl(179, 46%, 48%);
+
+
+//MIXIN : CARD
+@mixin Card {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 0 auto 0 auto;
+}
+
+@mixin card_Container {
+  display: block;
+  width: 76%;
+  margin: 5vh auto 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  border: solid $cyan 5px;
+  border-radius: 15%;
+  background-color: $azure;
+
+  strong {
+    color: $card_Color__Strong;
+  }
+    
+  p {
+    font-weight: 900;
+  }
+}
 
 // BODY
 
@@ -31,20 +66,105 @@ body {
   margin: 0 auto 0 auto;
 }
 
-// COVER
+// TITLE
 
-.cover {
+.title {
   display: flex;
   text-align: center;
   background-color: $background_Color__Cover;
+  
+  .title h1 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    padding: 0.5rem 0;
+    color: $color_Text__Cover;
+  }
 }
 
-.cover h1 {
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin-bottom: 0;
-  padding: 0.5rem 0;
-  color: $color_Text__Cover;
+// FIRST SECTION
+.card_Description {
+  @include Card;
+
+  .card_Container__Image img {
+    width: 100vw;
+    height: 30vh;
+    margin: -1px 0 0 -1px;
+    
+  }
+  
+  .card_Container__Text {
+    @include card_Container;
+    
+  }
+}
+  
+// SECOND SECTION
+
+.card_Information {
+  @include Card;
+  
+  .card_Container__Text{
+    @include card_Container;
+    
+    .btn_Info {
+      font-size: 1rem;
+      font-weight: 900;
+      color: $white;
+
+      &:hover {
+        transform: scale(1.20);
+      }
+    }
+  }
 }
 
+// MODAL : SKILL
+.modal {
 
+  .modal-header img {
+    width: 10vh;
+  }
+  
+  .modal-body{
+    background-color: $cyan;
+
+    h2 {
+      font-size: 1.8rem;
+      color: $white ;
+      font-weight: 900;
+      color: $white;
+      margin-bottom: -2vh;
+    }
+    
+    ul {
+      display: inline;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 2vh;
+      list-style: none;
+      margin: auto 0 auto 0;
+      
+        
+      li {
+        margin-top: 2vh;
+          
+        &:last-child {
+            margin-bottom: 5vh;
+        }
+      }
+    }
+  }
+  
+  .modal-footer {
+    display: block;
+    text-align: center;
+    // background-color: $white;
+    
+    p {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color:$white;
+    }
+  }
+}
