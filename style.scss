@@ -71,6 +71,15 @@ body {
   border-radius: 5%;
 }
 
+.offcanvas-header {
+  h1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $azure_Bold;
+    width: 100%;
+  }
+}
+
 .breadcrumb {
   font-size: 2vh;
   margin-top: 0.5vh;
@@ -103,6 +112,7 @@ body {
 }
 
 // FIRST SECTION
+
 .card_Description {
   @include Card;
   margin: 0 auto 0 auto;
@@ -180,7 +190,19 @@ body {
   }
 }
 
+// FOOTER
+
+footer {
+  .footer_Container__Address {
+    margin: 15% auto 0 auto;
+    text-align: center;
+    background-color: $azure_Bold;
+
+  }
+}
+
 // MODAL : SKILL
+
 .modal {
 
   .modal-header img {
@@ -230,6 +252,7 @@ body {
 }
 
 // MODAL : CONTACT
+
 .modal_Contact {
 
   h3 {
@@ -287,6 +310,10 @@ body {
       .form_Email{
         grid-area: email;
         text-align: center;
+
+        input{
+          width: 90%;
+        }
       }
       
       .form_Civility {

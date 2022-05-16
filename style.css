@@ -8,6 +8,13 @@ body {
   border-radius: 5%;
 }
 
+.offcanvas-header h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2aacaa;
+  width: 100%;
+}
+
 .breadcrumb {
   font-size: 2vh;
   margin-top: 0.5vh;
@@ -167,6 +174,12 @@ body {
   color: white;
 }
 
+footer .footer_Container__Address {
+  margin: 15% auto 0 auto;
+  text-align: center;
+  background-color: #2aacaa;
+}
+
 .modal .modal-header img {
   width: 10vh;
 }
@@ -268,6 +281,10 @@ body {
   -ms-grid-column-span: 2;
   grid-area: email;
   text-align: center;
+}
+
+.modal_Contact .form form .form_Email input {
+  width: 90%;
 }
 
 .modal_Contact .form form .form_Civility {
