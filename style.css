@@ -26,10 +26,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background-color: #369190;
+  background-color: #37aeac;
 }
 
-.title .title h1 {
+.title h1 {
   font-weight: bold;
   font-size: 1.4rem;
   margin-bottom: 0;
@@ -42,6 +42,7 @@ body {
   text-align: center;
   width: 100%;
   text-decoration: none;
+  margin: 4vh auto 0 auto;
   margin: 0 auto 0 auto;
 }
 
@@ -58,7 +59,8 @@ body {
   padding: 1rem 1rem 0 1rem;
   border: solid rgba(66, 179, 177, 0.786) 5px;
   border-radius: 15%;
-  background-color: azure;
+  background-color: #dffbfb;
+  margin-top: 9vh;
 }
 
 .card_Description .card_Container__Text strong {
@@ -74,7 +76,8 @@ body {
   text-align: center;
   width: 100%;
   text-decoration: none;
-  margin: 0 auto 0 auto;
+  margin: 4vh auto 0 auto;
+  padding-top: 0;
 }
 
 .card_Information .card_Container__Text {
@@ -84,7 +87,11 @@ body {
   padding: 1rem 1rem 0 1rem;
   border: solid rgba(66, 179, 177, 0.786) 5px;
   border-radius: 15%;
-  background-color: azure;
+  background-color: #dffbfb;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: #2aacaa;
 }
 
 .card_Information .card_Container__Text strong {
@@ -93,6 +100,10 @@ body {
 
 .card_Information .card_Container__Text p {
   font-weight: 900;
+}
+
+.card_Information .card_Container__Text strong {
+  color: white;
 }
 
 .card_Information .card_Container__Text .btn_Info {
@@ -106,6 +117,56 @@ body {
           transform: scale(1.2);
 }
 
+.card_Contact {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 4vh auto 0 auto;
+}
+
+.card_Contact .card_Container__Text {
+  display: block;
+  width: 76%;
+  margin: 5vh auto 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  border: solid rgba(66, 179, 177, 0.786) 5px;
+  border-radius: 15%;
+  background-color: #dffbfb;
+}
+
+.card_Contact .card_Container__Text strong {
+  color: #42b3b1;
+}
+
+.card_Contact .card_Container__Text p {
+  font-weight: 900;
+}
+
+.card_Contact .card_Container__Text h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2vh;
+  text-decoration: underline;
+}
+
+.card_Contact .card_Container__Text strong {
+  color: #2aacaa;
+}
+
+.card_Contact .card_Container__Text a {
+  text-decoration: none;
+  color: #1da5a5;
+  font-size: bold;
+}
+
+.card_Contact .card_Container__Text .btn_Info {
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+}
+
 .modal .modal-header img {
   width: 10vh;
 }
@@ -116,7 +177,6 @@ body {
 
 .modal .modal-body h2 {
   font-size: 1.8rem;
-  color: white;
   font-weight: 900;
   color: white;
   margin-bottom: -2vh;
@@ -148,5 +208,126 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   color: white;
+}
+
+.modal_Contact h3 {
+  color: white;
+}
+
+.modal_Contact .form p {
+  font-size: 1.4rem;
+}
+
+.modal_Contact .form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (40px)[9];
+      grid-template-rows: repeat(9, 40px);
+      grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "text text" "btnSubmit btn";
+}
+
+.modal_Contact .form form input {
+  border-radius: 2%;
+  border: solid white 2px;
+}
+
+.modal_Contact .form form label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.modal_Contact .form form .form_Name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+  margin: 5% 0;
+}
+
+.modal_Contact .form form .form_Name input {
+  width: 95%;
+}
+
+.modal_Contact .form form .form_Vorname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: vorname;
+  margin: 5% 0;
+}
+
+.modal_Contact .form form .form_Vorname input {
+  width: 95%;
+}
+
+.modal_Contact .form form .form_Email {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: email;
+  text-align: center;
+}
+
+.modal_Contact .form form .form_Civility {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: civility;
+  text-align: center;
+}
+
+.modal_Contact .form form .form_Civility select {
+  width: 50vw;
+  height: 6vh;
+}
+
+.modal_Contact .form form .form_Phone {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: phone;
+}
+
+.modal_Contact .form form .form_Phone input {
+  width: 45vw;
+}
+
+.modal_Contact .form form .form_Skill {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: skillTitle;
+  text-align: center;
+  margin: 3%;
+}
+
+.modal_Contact .form form .form_Skill textarea {
+  margin: 5% auto;
+  height: 20vh;
+}
+
+.modal_Contact .form form .form_Skill label {
+  color: #2aacaa;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.modal_Contact .form form .form_Button__Submit {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: btnSubmit;
+  text-align: center;
+  margin-top: -10%;
+}
+
+.modal_Contact .form form .form_Button__Dismiss {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  grid-area: btn;
+  text-align: center;
+  margin-top: -10%;
 }
 /*# sourceMappingURL=style.css.map */

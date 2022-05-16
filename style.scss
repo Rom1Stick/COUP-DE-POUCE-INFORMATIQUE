@@ -1,13 +1,16 @@
 // COLOR
 $cyan: hsla(179, 46%, 48%, 0.786);
-$azure: hsl(180, 100%, 97%);
+$azure: hsl(180, 77%, 93%);
+$azure_Bold: hsl(179, 61%, 42%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 // VARIABLE : COVER
-$background_Color__Cover: hsl(179, 46%, 39%);
+$background_Color__Cover: hsl(179, 52%, 45%);
 $color_Text__Cover: hsl(0, 0%, 100%);
 // VARIABLE : CARD
 $card_Color__Strong: hsl(179, 46%, 48%);
+// VARIABLE : THIRD SECTION 
+$section_Color__PhoneNumber : hsl(180, 70%, 38%);
 
 
 //MIXIN : CARD
@@ -16,7 +19,7 @@ $card_Color__Strong: hsl(179, 46%, 48%);
   text-align: center;
   width: 100%;
   text-decoration: none;
-  margin: 0 auto 0 auto;
+  margin: 4vh auto 0 auto;
 }
 
 @mixin card_Container {
@@ -35,6 +38,23 @@ $card_Color__Strong: hsl(179, 46%, 48%);
   p {
     font-weight: 900;
   }
+}
+
+@mixin btn_Info {
+  font-size: 1rem;
+  font-weight: 900;
+  color: $white;
+}
+
+@mixin input {
+ border-radius: 2%;
+ border: solid $white 2px;
+}
+
+@mixin label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: $white;
 }
 
 // BODY
@@ -73,7 +93,7 @@ body {
   text-align: center;
   background-color: $background_Color__Cover;
   
-  .title h1 {
+  h1 {
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 0;
@@ -85,6 +105,7 @@ body {
 // FIRST SECTION
 .card_Description {
   @include Card;
+  margin: 0 auto 0 auto;
 
   .card_Container__Image img {
     width: 100vw;
@@ -95,6 +116,7 @@ body {
   
   .card_Container__Text {
     @include card_Container;
+    margin-top: 9vh
     
   }
 }
@@ -103,18 +125,57 @@ body {
 
 .card_Information {
   @include Card;
+  padding-top: 0;
   
   .card_Container__Text{
     @include card_Container;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: $azure_Bold;
+
+    strong {
+      color: $white;
+    }
     
     .btn_Info {
-      font-size: 1rem;
-      font-weight: 900;
-      color: $white;
+      @include btn_Info;
 
       &:hover {
         transform: scale(1.20);
       }
+    }
+  }
+}
+
+// THIRD SECTION
+
+.card_Contact {
+  @include Card;
+
+  .card_Container__Text {
+    @include card_Container;
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $black;
+      margin-bottom: 2vh;
+      text-decoration: underline;
+    }
+
+    strong {
+      color: $azure_Bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: $section_Color__PhoneNumber;
+      font-size: bold;
+    }
+
+    .btn_Info {
+      @include btn_Info;
     }
   }
 }
@@ -131,7 +192,6 @@ body {
 
     h2 {
       font-size: 1.8rem;
-      color: $white ;
       font-weight: 900;
       color: $white;
       margin-bottom: -2vh;
@@ -165,6 +225,114 @@ body {
       font-size: 1.5rem;
       font-weight: 900;
       color:$white;
+    }
+  }
+}
+
+// MODAL : CONTACT
+.modal_Contact {
+
+  h3 {
+    color: $white;
+  }
+
+  .form {
+
+    p {
+      font-size: 1.4rem;
+    }
+    
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(9, 40px);
+      grid-template-areas: 
+      "name vorname"
+      "email email"
+      "email email"
+      "civility civility"
+      "phone phone"
+      "skillTitle skillTitle"
+      "skillTitle skillTitle"
+      "skillTitle skillTitle"
+      "text text"
+      "btnSubmit btn";
+      
+      input {
+        @include input;
+      }
+      
+      label {
+        @include label;
+      }
+      
+      .form_Name {
+        grid-area: name;
+        margin: 5% 0;
+        
+        input {
+          width: 95%;
+        }
+      }
+      
+      .form_Vorname{
+        grid-area:vorname;
+        margin: 5% 0;
+        
+        input {
+          width: 95%;
+        }
+      }
+      
+      .form_Email{
+        grid-area: email;
+        text-align: center;
+      }
+      
+      .form_Civility {
+        grid-area: civility;
+        text-align: center;
+        
+        select {
+          width: 50vw;
+          height: 6vh
+        }
+      }
+      
+      .form_Phone {
+        grid-area: phone;
+        
+        input {
+          width: 45vw;
+        }
+      }
+      .form_Skill {
+        grid-area: skillTitle;
+        text-align: center;
+        margin: 3%;
+        
+        textarea {
+          margin: 5% auto;
+          height: 20vh;
+        }
+        
+        label {
+          color: $azure_Bold;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+      .form_Button__Submit {
+        grid-area: btnSubmit;
+        text-align: center;
+        margin-top: -10%;
+      }
+
+      .form_Button__Dismiss {
+        grid-area: btn;
+        text-align: center;
+        margin-top: -10%;
+      }
     }
   }
 }
