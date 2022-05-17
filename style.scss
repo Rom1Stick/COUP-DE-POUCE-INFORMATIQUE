@@ -7,6 +7,8 @@ $black: hsl(0, 0%, 0%);
 // VARIABLE : COVER
 $background_Color__Cover: hsl(179, 52%, 45%);
 $color_Text__Cover: hsl(0, 0%, 100%);
+// VARIABLE : BREADCRUMB
+$breadcrumb_Background: hsl(180, 55%, 41%);
 // VARIABLE : CARD
 $card_Color__Strong: hsl(179, 46%, 48%);
 // VARIABLE : THIRD SECTION 
@@ -64,37 +66,46 @@ body {
 }
 
 // NAV
+.navbar {
+  .navbar_Logo {
+    margin-left: 5vw;
+    width: 60vw;
+    border-radius: 5%;
+  }
 
-.navbar_Logo {
-  margin-left: 5vw;
-  width: 60vw;
-  border-radius: 5%;
-}
+  .navbar_Button {
+    border: solid $black;
+    background-color: $azure; 
+    
+    .navbar-toggler-icon{
+      width: 8vw;
+    }
+  }
+  .offcanvas{
+    background-color: $azure;
+    .offcanvas-header {
+      h1 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: $azure_Bold;
+        width: 100%;
+      }
+    }
+    
+    .offcanvas-body {
+      a {
+        font-weight: bold;
+      }
 
-.offcanvas-header {
-  h1 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: $azure_Bold;
-    width: 100%;
+      .btn {
+        background-color: $white;
+        border: solid;
+        font-weight: bold;
+      }
+    }
   }
 }
-
-.breadcrumb {
-  font-size: 2vh;
-  margin-top: 0.5vh;
-  margin-bottom: 0;
-}
-
-// FLUX
-
-.flux {
-  display: block;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto 0 auto;
-}
-
+  
 // TITLE
 
 .title {
@@ -105,11 +116,33 @@ body {
   h1 {
     font-weight: bold;
     font-size: 1.4rem;
-    margin-bottom: 0;
+    // margin-bottom: 2%;
     padding: 0.5rem 0;
     color: $color_Text__Cover;
   }
 }
+
+// BREADCRUMB
+.breadcrumb {
+  font-size: 2vh;
+  margin: 0 0 0 0;
+  background-color: $breadcrumb_Background;
+    
+  .breadcrumb-item {
+    color: white;
+  }
+}
+
+  
+  // FLUX
+  
+  .flux {
+  display: block;
+  width: 100vw;
+  max-width: 1400px;
+  margin: 0 auto 0 auto;
+}
+
 
 // FIRST SECTION
 
@@ -121,16 +154,14 @@ body {
     width: 100vw;
     height: 30vh;
     margin: -1px 0 0 -1px;
-    
   }
   
   .card_Container__Text {
     @include card_Container;
-    margin-top: 9vh
-    
+    margin-top: 9vh;
   }
 }
-  
+
 // SECOND SECTION
 
 .card_Information {
@@ -147,7 +178,7 @@ body {
     strong {
       color: $white;
     }
-    
+
     .btn_Info {
       @include btn_Info;
 
@@ -203,10 +234,11 @@ footer {
 
 // MODAL : SKILL
 
-.modal {
-
+.modal_Skill {
+  height: 100vh;
+  
   .modal-header img {
-    width: 10vh;
+    width: 13vw;
   }
   
   .modal-body{
@@ -255,111 +287,292 @@ footer {
 
 .modal_Contact {
 
-  h3 {
-    color: $white;
+  .modal-header img {
+    width: 13vw;
   }
 
-  .form {
+  h3 {
+    color: $white;
+    font-size: 1.3rem;
+  }
 
-    p {
-      font-size: 1.4rem;
-    }
-    
-    form {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(9, 40px);
-      grid-template-areas: 
-      "name vorname"
-      "email email"
-      "email email"
-      "civility civility"
-      "phone phone"
-      "skillTitle skillTitle"
-      "skillTitle skillTitle"
-      "skillTitle skillTitle"
-      "text text"
-      "btnSubmit btn";
-      
-      input {
-        @include input;
-      }
-      
-      label {
-        @include label;
-      }
-      
-      .form_Name {
-        grid-area: name;
-        margin: 5% 0;
-        
-        input {
-          width: 95%;
-        }
-      }
-      
-      .form_Vorname{
-        grid-area:vorname;
-        margin: 5% 0;
-        
-        input {
-          width: 95%;
-        }
-      }
-      
-      .form_Email{
-        grid-area: email;
-        text-align: center;
+  .modal-body {
+    background-color: $cyan;
 
-        input{
-          width: 90%;
-        }
-      }
-      
-      .form_Civility {
-        grid-area: civility;
+    .form {
+      form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 40px);
+        grid-template-areas: 
+        "name vorname"
+        "email email"
+        "email email"
+        "civility civility"
+        "phone phone"
+        "skillTitle skillTitle"
+        "skillTitle skillTitle"
+        "skillTitle skillTitle"
+        "btnSubmit btn";
         text-align: center;
-        
-        select {
-          width: 50vw;
-          height: 6vh
-        }
-      }
-      
-      .form_Phone {
-        grid-area: phone;
-        
+          
         input {
-          width: 45vw;
+          @include input;
         }
-      }
-      .form_Skill {
-        grid-area: skillTitle;
-        text-align: center;
-        margin: 3%;
-        
-        textarea {
-          margin: 5% auto;
-          height: 20vh;
-        }
-        
+          
         label {
-          color: $azure_Bold;
-          font-size: 0.8rem;
-          text-align: center;
-        }
-      }
-      .form_Button__Submit {
-        grid-area: btnSubmit;
-        text-align: center;
-        margin-top: -10%;
-      }
+          @include label;
 
-      .form_Button__Dismiss {
-        grid-area: btn;
-        text-align: center;
-        margin-top: -10%;
+        }
+        
+        .form_Name {
+          grid-area: name;
+          margin: 5% 0;
+          
+          input {
+            width: 95%;
+          }
+        }
+        
+        .form_Vorname{
+          grid-area: vorname;
+          margin: 5% 0;
+          
+          input {
+            width: 95%;
+          }
+        }
+        
+        .form_Email{
+          grid-area: email;
+          margin-top: 3vh;
+          
+          input{
+            width: 80%;
+          }
+        }
+        
+        .form_Civility {
+          grid-area: civility;
+          margin-top: 4vh;
+          
+          select {
+            width: 50%;
+            height: 6vh
+          }
+        }
+        
+        .form_Phone {
+          grid-area: phone;
+          margin-top: 6vh;
+
+          input {
+            width: 45%;
+          }
+        }
+        .form_Skill {
+          grid-area: skillTitle;
+          margin: 5vh 5% 4vh 5%;
+          
+          textarea {
+            margin: 5% auto;
+            height: 70%;
+          }
+          
+          label {
+            color: $azure_Bold;
+            font-size: 0.75rem;
+            font-weight: 800;
+          }
+        }
+        .form_Button__Submit {
+          grid-area: btnSubmit;
+          text-align: center;
+          margin-top: 2vh;
+        }
+        
+        .form_Button__Dismiss {
+          grid-area: btn;
+          text-align: center;
+          margin-top: 2vh;
+        }
       }
     }
   }
 }
+
+// RESPONSIVE MAIN
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+  }
+  
+  .navbar {
+    .navbar_Logo {
+      margin: 0 30%;
+    }
+    
+    .navbar_Button {      
+      .navbar-toggler-icon {
+        width: 10vh;
+        height: 10vh;
+      }
+    }
+    
+    .offcanvas{
+      .offcanvas-header {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      
+      .offcanvas-body {
+        a {
+          font-size: 1.2rem;
+        }
+
+        form {
+          height: 8vh;
+        }
+      }
+    }
+  }
+
+  .title {
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .breadcrumb{
+    li {
+      font-size: 1rem;
+    } 
+  }
+
+  .card_Description{
+    .card_Container__Image img {
+      height: 45vh;
+    }
+
+    .card_Container__Text{
+      width: 55%;
+    }
+  }
+
+  .card_Information{
+    .information_Text{
+      height: 30vh;
+      
+      p{
+        margin: 1% 12% 2% 12%;
+      }
+      
+      .btn_Info {
+        width: 40vw;
+        height: 8vh;
+        font-size: 1.6rem;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  .card_Contact {
+    .card_Container__Text{
+      width: 55%;
+
+      a {
+        font-size: 1.6rem;
+      }
+
+      .btn_Info {
+        width: 40vw;
+        height: 8vh;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .modal_Skill {
+    .modal-header {
+      height: 15vh;
+
+      button {
+        width : 5vw;
+      }
+    }
+
+    .modal-body {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      li {
+        font-size: 1.2rem;
+      }
+    }
+
+    .modal-footer {
+      p{
+        font-size: 2.5rem;
+      }
+
+      .btn-primary, .btn-secondary {
+        width: 25vw;
+        height: 8vh;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .modal_Contact {
+    .modal-header {
+      height: 13vh;
+
+      button {
+        width : 5vw;
+      }
+    }
+    
+    .modal-body {
+      
+      h3 {
+        font-size: 2.4rem;
+      }
+      
+      .form {
+        input {
+          height: 6vh;
+        }
+        
+        .form_Email, .form_Civility, .form_Phone {
+          label {
+            font-size: 1.6rem;
+          }
+        }
+
+        .form_Skill {
+          .form-floating {
+            label {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .btn-primary, .btn-secondary {
+          margin-top: 2vh;
+          width: 30vw;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+  
+
+
