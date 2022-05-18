@@ -37,4 +37,37 @@ body {
   border: solid;
   font-weight: bold;
 }
+
+.flux {
+  display: block;
+  width: 100vw;
+  max-width: 2560px;
+  margin: 0 auto 0 auto;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  background-color: #37aeac;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.breadcrumb {
+  font-size: 1.5vh;
+  margin: 0 0 0 0;
+  background-color: #11a7a5;
+}
+
+.breadcrumb .breadcrumb-item {
+  color: white;
+}
 /*# sourceMappingURL=event.css.map */

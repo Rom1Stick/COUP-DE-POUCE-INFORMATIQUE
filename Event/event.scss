@@ -60,3 +60,38 @@ body {
     }
   }
 }
+
+// FLUX
+  
+.flux {
+  display: block;
+  width: 100vw;
+  max-width: 2560px;
+  margin: 0 auto 0 auto;
+}
+
+// TITLE
+
+.title {
+  display: flex;
+  text-align: center;
+  background-color: $background_Color__Cover;
+  h1 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+    color: $color_Text__Cover;
+  }
+}
+
+// BREADCRUMB
+.breadcrumb {
+  font-size: 1.5vh;
+  margin: 0 0 0 0;
+  background-color: $breadcrumb_Background;
+    
+  .breadcrumb-item {
+    color: white;
+  }
+}
