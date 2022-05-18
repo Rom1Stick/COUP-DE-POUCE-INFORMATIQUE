@@ -1,1 +1,40 @@
-/* No CSS *//*# sourceMappingURL=event.css.map */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar .navbar_Logo {
+  margin-left: 5vw;
+  width: 60vw;
+  border-radius: 5%;
+}
+
+.navbar .navbar_Button {
+  border: solid black;
+  background-color: #dffbfb;
+}
+
+.navbar .navbar_Button .navbar-toggler-icon {
+  width: 8vw;
+}
+
+.navbar .offcanvas {
+  background-color: #dffbfb;
+}
+
+.navbar .offcanvas .offcanvas-header h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2aacaa;
+  width: 100%;
+}
+
+.navbar .offcanvas .offcanvas-body a {
+  font-weight: bold;
+}
+
+.navbar .offcanvas .offcanvas-body .btn {
+  background-color: white;
+  border: solid;
+  font-weight: bold;
+}
+/*# sourceMappingURL=event.css.map */
