@@ -8,7 +8,7 @@ $black: hsl(0, 0%, 0%);
 $background_Color__Cover: hsl(179, 52%, 45%);
 $color_Text__Cover: hsl(0, 0%, 100%);
 // VARIABLE : BREADCRUMB
-$breadcrumb_Background: hsl(180, 55%, 41%);
+$breadcrumb_Background: hsl(179, 82%, 36%);
 // VARIABLE : CARD
 $card_Color__Strong: hsl(179, 46%, 48%);
 // VARIABLE : THIRD SECTION 
@@ -46,6 +46,10 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
   font-size: 1rem;
   font-weight: 900;
   color: $white;
+
+    &:hover {
+      transform: scale(1.20);
+  }
 }
 
 @mixin input {
@@ -124,7 +128,7 @@ body {
 
 // BREADCRUMB
 .breadcrumb {
-  font-size: 2vh;
+  font-size: 1.5vh;
   margin: 0 0 0 0;
   background-color: $breadcrumb_Background;
     
@@ -133,16 +137,14 @@ body {
   }
 }
 
-  
   // FLUX
   
   .flux {
   display: block;
   width: 100vw;
-  max-width: 1400px;
+  max-width: 2560px;
   margin: 0 auto 0 auto;
 }
-
 
 // FIRST SECTION
 
@@ -152,7 +154,7 @@ body {
 
   .card_Container__Image img {
     width: 100vw;
-    height: 30vh;
+    height: 15%;
     margin: -1px 0 0 -1px;
   }
   
@@ -171,6 +173,7 @@ body {
   .card_Container__Text{
     @include card_Container;
     width: 100%;
+    height: 20%;
     border: none;
     border-radius: 0;
     background-color: $azure_Bold;
@@ -181,10 +184,6 @@ body {
 
     .btn_Info {
       @include btn_Info;
-
-      &:hover {
-        transform: scale(1.20);
-      }
     }
   }
 }
@@ -224,11 +223,13 @@ body {
 // FOOTER
 
 footer {
-  .footer_Container__Address {
-    margin: 15% auto 0 auto;
-    text-align: center;
-    background-color: $azure_Bold;
+  margin-top: 9vh;
+  background-color: $azure_Bold;
 
+  .footer_Container__Address {
+    grid-area: text2;
+    padding: 2vh;
+    text-align: center;
   }
 }
 
@@ -238,7 +239,8 @@ footer {
   height: 100vh;
   
   .modal-header img {
-    width: 13vw;
+    width: 15%;
+    height: 130%;
   }
   
   .modal-body{
@@ -280,15 +282,21 @@ footer {
       font-weight: 900;
       color:$white;
     }
+
+    .btn-primary, .btn-secondary {
+      font-weight: bold;
+    }
   }
 }
 
 // MODAL : CONTACT
 
 .modal_Contact {
+  height: 100vh;
 
   .modal-header img {
-    width: 13vw;
+    width: 15%;
+    height: 130%;
   }
 
   h3 {
@@ -389,19 +397,21 @@ footer {
           grid-area: btnSubmit;
           text-align: center;
           margin-top: 2vh;
+          font-weight: bold;
         }
         
         .form_Button__Dismiss {
           grid-area: btn;
           text-align: center;
           margin-top: 2vh;
+          font-weight: bold;
         }
       }
     }
   }
 }
 
-// RESPONSIVE MAIN
+// RESPONSIVE TABLET
 
 @media screen and (min-width: 768px) {
   p {
@@ -410,13 +420,15 @@ footer {
   
   .navbar {
     .navbar_Logo {
-      margin: 0 30%;
+      margin: 0;
+      height: 15vh;
+      width: 30vw;
     }
     
     .navbar_Button {      
       .navbar-toggler-icon {
-        width: 10vh;
-        height: 10vh;
+        width: 8vh;
+        height: 8vh;
       }
     }
     
@@ -429,11 +441,11 @@ footer {
       
       .offcanvas-body {
         a {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
 
         form {
-          height: 8vh;
+          height: 6vh;
         }
       }
     }
@@ -448,32 +460,32 @@ footer {
 
   .breadcrumb{
     li {
-      font-size: 1rem;
+      font-size: 0.9rem;
     } 
   }
 
   .card_Description{
     .card_Container__Image img {
-      height: 45vh;
+      height: 60vh;
     }
 
     .card_Container__Text{
-      width: 55%;
+      width: 50%;
     }
   }
 
   .card_Information{
     .information_Text{
-      height: 30vh;
+      height: 20%;
       
       p{
         margin: 1% 12% 2% 12%;
       }
       
       .btn_Info {
-        width: 40vw;
-        height: 8vh;
-        font-size: 1.6rem;
+        width: 40%;
+        height: 20%;
+        font-size: 1.4rem;
         margin-bottom: 2%;
       }
     }
@@ -481,23 +493,23 @@ footer {
 
   .card_Contact {
     .card_Container__Text{
-      width: 55%;
+      width: 50%;
 
       a {
         font-size: 1.6rem;
       }
 
       .btn_Info {
-        width: 40vw;
-        height: 8vh;
-        font-size: 1.6rem;
+        width: 55%;
+        height: 20%;
+        font-size: 1.3rem;
       }
     }
   }
 
   .modal_Skill {
     .modal-header {
-      height: 15vh;
+      height: 10vh;
 
       button {
         width : 5vw;
@@ -520,17 +532,16 @@ footer {
       }
 
       .btn-primary, .btn-secondary {
-        width: 25vw;
-        height: 8vh;
+        width: 40%;
+        height: 20%;
         font-size: 1.2rem;
-        font-weight: bold;
       }
     }
   }
 
   .modal_Contact {
     .modal-header {
-      height: 13vh;
+      height: 10vh;
 
       button {
         width : 5vw;
@@ -545,9 +556,197 @@ footer {
       
       .form {
         input {
-          height: 6vh;
+          height: 4vh;
         }
-        
+
+        select#select_Civility {
+          height: 4vh;
+        }
+
+        .form_Email, .form_Civility, .form_Phone {
+          margin-top: 3vh;
+
+          label {
+            font-size: 1.6rem;
+          }
+        }
+
+        .form_Skill {
+          .form-floating {
+            label {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .btn-primary, .btn-secondary {
+          margin-top: 2vh;
+          width: 75%;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE LAPTOP
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 2rem;
+  }
+  
+  .navbar {
+    .navbar_Logo {
+      margin: 0;
+      width: 40vh
+    }
+    
+    .offcanvas{
+      .offcanvas-header {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      
+      .offcanvas-body {
+        a {
+          font-size: 1.4rem;
+        }
+
+        form {
+          height: 8vh;
+        }
+      }
+    }
+  }
+
+  .title {
+
+    h1 {
+      font-size: 4.2rem;
+    }
+  }
+
+  .breadcrumb{
+    li {
+      font-size: 1rem;
+    } 
+  }
+
+  .card_Description{
+    .card_Container__Image img {
+      height: 60vh;
+    }
+
+    .card_Container__Text{
+      width: 45%;
+    }
+  }
+
+  .card_Information{
+    .information_Text{
+      height: 20%;
+      
+      p{
+        margin: 1% 12% 2% 12%;
+      }
+      
+      .btn_Info {
+        width: 40%;
+        height: 20%;
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  .card_Contact {
+    .card_Container__Text{
+      width: 45%;
+
+      a {
+        font-size: 1.8rem;
+      }
+
+      .btn_Info {
+        width: 55%;
+        height: 20%;
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  .modal_Skill {
+    .modal-header {
+      height: 15vh;
+
+      img {
+        height: 15vh;
+        width: 15%;
+      }
+
+      button {
+        width : 5vw;
+      }
+    }
+
+    .modal-body {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      li {
+        font-size: 1.3rem;
+      }
+    }
+
+    .modal-footer {
+      p{
+        font-size: 2.5rem;
+      }
+
+      .btn-primary, .btn-secondary {
+        width: 40%;
+        height: 7vh;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .modal_Contact {
+    .modal-header {
+      height: 10vh;
+
+      img{
+        height: 130%;
+        width: 8vw;
+      }
+
+      button {
+        width : 5vw;
+      }
+    }
+    
+    .modal-body {
+      
+      h3 {
+        font-size: 2.4rem;
+      }
+      
+      .form {
+        form{
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: repeat(8, 45px);
+
+          input {
+            height: 5vh;
+          }
+        }
+
         .form_Email, .form_Civility, .form_Phone {
           label {
             font-size: 1.6rem;
@@ -564,7 +763,7 @@ footer {
 
         .btn-primary, .btn-secondary {
           margin-top: 2vh;
-          width: 30vw;
+          width: 50%;
           font-size: 1.2rem;
           font-weight: bold;
         }
@@ -573,6 +772,86 @@ footer {
   }
 }
 
-  
+// RESPONSIVE <= 1200 px
 
+@media screen and (min-width: 1200px){
+  .card_Description{
+    .card_Container__Image img {
+      height: 55vh;
+    }
+
+    .card_Container__Text{
+      width: 35%;
+    }
+  }
+
+  .card_Information{
+    .information_Text{
+      height: 20%;
+      
+      p{
+        margin: 1% 20% 2% 20%;
+      }
+      
+      .btn_Info {
+        width: 25%;
+        height: 10%;
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  .card_Contact {
+
+    .card_Container__Text{
+      width: 35%;
+      
+      .btn_Infos {
+        width: 25%;
+        height: 10%;
+      }
+    }
+  }
+
+  .modal_Skill {
+    .modal-header{
+      height: 10vh;
+
+      img{
+        width: 20%;
+        height: 10vh;
+      }
+    }
+    .modal-footer {
+
+      .btn-primary, .btn-secondary {
+        width: 40%;
+        height: 6vh;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .modal_Contact {
+    .modal-header{
+
+      img{
+        width: 20%;
+        height: 11vh;
+      }
+    }
+
+    .modal-body {
+      .form {
+
+        .btn-primary, .btn-secondary {
+          margin-top: 2vh;
+          width: 10vw;
+          font-size: 1.2rem;
+        }
+      }     
+    }
+  }
+}
 
