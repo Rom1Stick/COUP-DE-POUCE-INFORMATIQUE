@@ -2,8 +2,8 @@ main {
   background-color: #dffbfb;
 }
 
-.card .img_FirstCard {
-  height: 13rem;
+.card .img_Card {
+  height: 35vh;
 }
 
 .card .card-body .card-title {
@@ -27,12 +27,62 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar .container-fluid img {
-    width: 80%;
-    margin: 0;
+  .section_Card__Container {
+    padding-bottom: 3%;
   }
-  .navbar .container-fluid .navbar-toggler-icon {
-    height: 10vh;
+  .section_Card__Container .card .img_Card {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section_Card__Container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5% 1fr 2% 1fr 5%;
+        grid-template-columns: 5% 1fr 2% 1fr 5%;
+    -ms-grid-rows: 43%  58%;
+        grid-template-rows: 43%  58%;
+        grid-template-areas: ". card1 . card2 ." ". card3 card3 card3 .";
+    padding-bottom: 5%;
+  }
+  .section_Card__Container .card {
+    display: block;
+    width: 40vw;
+    margin: 0 auto 0 auto;
+  }
+  .section_Card__Container .card .card-body p {
+    font-size: 1.2rem;
+  }
+  .section_Card__Container .card .card-body small {
+    font-size: 1.2rem;
+  }
+  .section_Card__Container .card .img_Card {
+    height: 40vh;
+    width: 40vw;
+    margin: 0 auto 0 auto;
+  }
+  .section_Card__Container .card_First {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: card1;
+  }
+  .section_Card__Container .card_Second {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: card2;
+  }
+  .section_Card__Container .card_Third {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: card3;
+    width: 75%;
+  }
+  .section_Card__Container .card_Third .img_Card__Third {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=event.css.map */

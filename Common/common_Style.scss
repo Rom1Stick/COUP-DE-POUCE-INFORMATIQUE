@@ -95,7 +95,6 @@ body {
 // FOOTER 
 
 footer {
-  margin-top: 9vh;
   padding-top: 4vh;
   background-color: $azure_Bold;
   
@@ -113,6 +112,7 @@ footer {
       img {
         width: 50%;
         float: right;
+        margin-right: 10%;
       }
     }
 
@@ -127,6 +127,8 @@ footer {
 
       img {
         width: 70%;
+        margin-left: 10%;
+
       }
     }
   }
@@ -229,5 +231,14 @@ footer {
     li {
       font-size: 1rem;
     } 
+  }
+
+  .footer_Container {    
+    .footer_Container__Img2 {
+
+      img {
+        width: 10%;
+      }
+    }
   }
 }

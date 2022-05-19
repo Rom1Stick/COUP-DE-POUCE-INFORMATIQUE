@@ -108,6 +108,7 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
 
 .card_Contact {
   @include Card;
+  margin-bottom: 5%;
 
   .card_Container__Text {
     @include card_Container;
