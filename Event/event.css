@@ -1,73 +1,38 @@
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
-.navbar .navbar_Logo {
-  margin-left: 5vw;
-  width: 60vw;
-  border-radius: 5%;
-}
-
-.navbar .navbar_Button {
-  border: solid black;
+main {
   background-color: #dffbfb;
 }
 
-.navbar .navbar_Button .navbar-toggler-icon {
-  width: 8vw;
+.card .img_FirstCard {
+  height: 13rem;
 }
 
-.navbar .offcanvas {
-  background-color: #dffbfb;
-}
-
-.navbar .offcanvas .offcanvas-header h1 {
-  font-size: 1.1rem;
+.card .card-body .card-title {
   font-weight: bold;
-  color: #2aacaa;
-  width: 100%;
-}
-
-.navbar .offcanvas .offcanvas-body a {
-  font-weight: bold;
-}
-
-.navbar .offcanvas .offcanvas-body .btn {
-  background-color: white;
-  border: solid;
-  font-weight: bold;
-}
-
-.flux {
-  display: block;
-  width: 100vw;
-  max-width: 2560px;
-  margin: 0 auto 0 auto;
-}
-
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  font-size: 1.2rem;
   text-align: center;
-  background-color: #37aeac;
 }
 
-.title h1 {
+.card .card-body .card-text {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.card .card-body .card-text:last-child {
+  font-size: 0.8rem;
   font-weight: bold;
-  font-size: 1.4rem;
-  padding: 0.5rem 0;
-  margin-bottom: 0;
-  color: white;
 }
 
-.breadcrumb {
-  font-size: 1.5vh;
-  margin: 0 0 0 0;
-  background-color: #11a7a5;
+.card .card-body .card-text small {
+  color: #2aacaa;
 }
 
-.breadcrumb .breadcrumb-item {
-  color: white;
+@media screen and (min-width: 768px) {
+  .navbar .container-fluid img {
+    width: 80%;
+    margin: 0;
+  }
+  .navbar .container-fluid .navbar-toggler-icon {
+    height: 10vh;
+  }
 }
 /*# sourceMappingURL=event.css.map */

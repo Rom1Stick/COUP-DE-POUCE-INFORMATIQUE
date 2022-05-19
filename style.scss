@@ -8,12 +8,11 @@ $black: hsl(0, 0%, 0%);
 $background_Color__Cover: hsl(179, 52%, 45%);
 $color_Text__Cover: hsl(0, 0%, 100%);
 // VARIABLE : BREADCRUMB
-$breadcrumb_Background: hsl(0, 0%, 64%);
+$breadcrumb_Background: hsl(179, 82%, 36%);
 // VARIABLE : CARD
 $card_Color__Strong: hsl(179, 46%, 48%);
 // VARIABLE : THIRD SECTION 
 $section_Color__PhoneNumber : hsl(180, 70%, 38%);
-
 
 //MIXIN : CARD
 @mixin Card {
@@ -62,90 +61,7 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
   font-size: 1.2rem;
   color: $white;
 }
-
-// BODY
-
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
-// NAV
-.navbar {
-  .navbar_Logo {
-    margin-left: 5vw;
-    width: 60vw;
-    border-radius: 5%;
-  }
-
-  .navbar_Button {
-    border: solid $black;
-    background-color: $azure; 
-    
-    .navbar-toggler-icon{
-      width: 8vw;
-    }
-  }
-  .offcanvas{
-    background-color: $azure;
-    .offcanvas-header {
-      h1 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: $azure_Bold;
-        width: 100%;
-      }
-    }
-    
-    .offcanvas-body {
-      a {
-        font-weight: bold;
-      }
-
-      .btn {
-        background-color: $white;
-        border: solid;
-        font-weight: bold;
-      }
-    }
-  }
-}
-  
-// TITLE
-
-.title {
-  display: flex;
-  text-align: center;
-  background-color: $background_Color__Cover;
-  
-  h1 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    // margin-bottom: 2%;
-    padding: 0.5rem 0;
-    color: $color_Text__Cover;
-  }
-}
-
-// BREADCRUMB
-.breadcrumb {
-  font-size: 1.5vh;
-  margin: 0 0 0 0;
-  background-color: $breadcrumb_Background;
-    
-  .breadcrumb-item {
-    color: white;
-  }
-}
-
-  // FLUX
-  
-  .flux {
-  display: block;
-  width: 100vw;
-  max-width: 2560px;
-  margin: 0 auto 0 auto;
-}
-
+ 
 // FIRST SECTION
 
 .card_Description {
@@ -217,19 +133,6 @@ body {
     .btn_Info {
       @include btn_Info;
     }
-  }
-}
-
-// FOOTER
-
-footer {
-  margin-top: 9vh;
-  background-color: $azure_Bold;
-
-  .footer_Container__Address {
-    grid-area: text2;
-    padding: 2vh;
-    text-align: center;
   }
 }
 
@@ -414,55 +317,6 @@ footer {
 // RESPONSIVE TABLET
 
 @media screen and (min-width: 768px) {
-  p {
-    font-size: 1.6rem;
-  }
-  
-  .navbar {
-    .navbar_Logo {
-      margin: 0;
-      height: 15vh;
-      width: 30vw;
-    }
-    
-    .navbar_Button {      
-      .navbar-toggler-icon {
-        width: 8vh;
-        height: 8vh;
-      }
-    }
-    
-    .offcanvas{
-      .offcanvas-header {
-        h1 {
-          font-size: 1.5rem;
-        }
-      }
-      
-      .offcanvas-body {
-        a {
-          font-size: 1.3rem;
-        }
-
-        form {
-          height: 6vh;
-        }
-      }
-    }
-  }
-
-  .title {
-
-    h1 {
-      font-size: 3rem;
-    }
-  }
-
-  .breadcrumb{
-    li {
-      font-size: 0.9rem;
-    } 
-  }
 
   .card_Description{
     .card_Container__Image img {
@@ -593,48 +447,7 @@ footer {
 // RESPONSIVE LAPTOP
 
 @media screen and (min-width: 1024px) {
-  p {
-    font-size: 2rem;
-  }
   
-  .navbar {
-    .navbar_Logo {
-      margin: 0;
-      width: 40vh
-    }
-    
-    .offcanvas{
-      .offcanvas-header {
-        h1 {
-          font-size: 1.5rem;
-        }
-      }
-      
-      .offcanvas-body {
-        a {
-          font-size: 1.4rem;
-        }
-
-        form {
-          height: 8vh;
-        }
-      }
-    }
-  }
-
-  .title {
-
-    h1 {
-      font-size: 4.2rem;
-    }
-  }
-
-  .breadcrumb{
-    li {
-      font-size: 1rem;
-    } 
-  }
-
   .card_Description{
     .card_Container__Image img {
       height: 60vh;

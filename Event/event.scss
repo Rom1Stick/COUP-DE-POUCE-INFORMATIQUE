@@ -4,94 +4,62 @@ $azure: hsl(180, 77%, 93%);
 $azure_Bold: hsl(179, 61%, 42%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
-// VARIABLE : COVER
-$background_Color__Cover: hsl(179, 52%, 45%);
-$color_Text__Cover: hsl(0, 0%, 100%);
-// VARIABLE : BREADCRUMB
-$breadcrumb_Background: hsl(179, 82%, 36%);
-// VARIABLE : CARD
-$card_Color__Strong: hsl(179, 46%, 48%);
-// VARIABLE : THIRD SECTION 
-$section_Color__PhoneNumber : hsl(180, 70%, 38%);
 
-// BODY
+// MAIN
 
-body {
-  font-family: 'Raleway', sans-serif;
+main {
+  background-color: $azure;
 }
 
-// NAV
-.navbar {
-  .navbar_Logo {
-    margin-left: 5vw;
-    width: 60vw;
-    border-radius: 5%;
-  }
+// SECTION
 
-  .navbar_Button {
-    border: solid $black;
-    background-color: $azure; 
-    
-    .navbar-toggler-icon{
-      width: 8vw;
-    }
+.card {
+
+  .img_FirstCard {
+    height: 13rem;
   }
-  .offcanvas{
-    background-color: $azure;
-    .offcanvas-header {
-      h1 {
-        font-size: 1.1rem;
+  .card-body {
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .card-text {
+      font-size: 0.8rem;
+      text-align: center;
+
+      
+      &:last-child {
+        font-size: 0.8rem;
         font-weight: bold;
+      }
+
+      small {
         color: $azure_Bold;
-        width: 100%;
-      }
-    }
-    
-    .offcanvas-body {
-      a {
-        font-weight: bold;
-      }
-
-      .btn {
-        background-color: $white;
-        border: solid;
-        font-weight: bold;
       }
     }
   }
 }
 
-// FLUX
+// RESPONSIVE TABLET 
+
+@media screen and (min-width: 768px) {
   
-.flux {
-  display: block;
-  width: 100vw;
-  max-width: 2560px;
-  margin: 0 auto 0 auto;
-}
+  .navbar {
+    .container-fluid {
 
-// TITLE
+      img {
+        width: 80%;
+        margin: 0;
+      }
 
-.title {
-  display: flex;
-  text-align: center;
-  background-color: $background_Color__Cover;
-  h1 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding: 0.5rem 0;
-    margin-bottom: 0;
-    color: $color_Text__Cover;
-  }
-}
+      .navbar-toggler-icon{
+        height: 10vh;
+      }
 
-// BREADCRUMB
-.breadcrumb {
-  font-size: 1.5vh;
-  margin: 0 0 0 0;
-  background-color: $breadcrumb_Background;
-    
-  .breadcrumb-item {
-    color: white;
+      
+    }
   }
 }

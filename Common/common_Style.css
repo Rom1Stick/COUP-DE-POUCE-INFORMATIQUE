@@ -1,0 +1,174 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar .navbar_Logo {
+  margin-left: 5vw;
+  width: 60vw;
+  border-radius: 5%;
+}
+
+.navbar .navbar_Button {
+  border: solid black;
+  background-color: #dffbfb;
+}
+
+.navbar .navbar_Button .navbar-toggler-icon {
+  width: 8vw;
+}
+
+.navbar .offcanvas {
+  background-color: #dffbfb;
+}
+
+.navbar .offcanvas .offcanvas-header h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2aacaa;
+  width: 100%;
+}
+
+.navbar .offcanvas .offcanvas-body a {
+  font-weight: bold;
+}
+
+.navbar .offcanvas .offcanvas-body .btn {
+  background-color: white;
+  border: solid;
+  font-weight: bold;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  background-color: #37aeac;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.breadcrumb {
+  font-size: 1.5vh;
+  margin: 0 0 0 0;
+  background-color: #11a7a5;
+}
+
+.breadcrumb .breadcrumb-item {
+  color: white;
+}
+
+.flux {
+  display: block;
+  width: 100vw;
+  max-width: 2560px;
+  margin: 0 auto 0 auto;
+}
+
+footer {
+  margin-top: 9vh;
+  padding-top: 4vh;
+  background-color: #2aacaa;
+}
+
+footer .footer_Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 20%;
+      grid-template-rows: 20%;
+      grid-template-areas: "logo1 text logo2";
+  padding: 1vh;
+  height: 100%;
+}
+
+footer .footer_Container .footer_Container__Img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo1;
+}
+
+footer .footer_Container .footer_Container__Img1 img {
+  width: 50%;
+  float: right;
+}
+
+footer .footer_Container .footer_Container__Address {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+footer .footer_Container .footer_Container__Img2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: logo2;
+}
+
+footer .footer_Container .footer_Container__Img2 img {
+  width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+  }
+  .navbar .navbar_Logo {
+    margin: 0;
+    height: 15vh;
+    width: 30vw;
+  }
+  .navbar .navbar_Button .navbar-toggler-icon {
+    width: 8vh;
+    height: 8vh;
+  }
+  .navbar .offcanvas .offcanvas-header h1 {
+    font-size: 1.5rem;
+  }
+  .navbar .offcanvas .offcanvas-body a {
+    font-size: 1.3rem;
+  }
+  .navbar .offcanvas .offcanvas-body form {
+    height: 6vh;
+  }
+  .title h1 {
+    font-size: 3rem;
+  }
+  .breadcrumb li {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 2rem;
+  }
+  .navbar .navbar_Logo {
+    margin: 0;
+    width: 40vh;
+  }
+  .navbar .offcanvas .offcanvas-header h1 {
+    font-size: 1.5rem;
+  }
+  .navbar .offcanvas .offcanvas-body a {
+    font-size: 1.4rem;
+  }
+  .navbar .offcanvas .offcanvas-body form {
+    height: 8vh;
+  }
+  .title h1 {
+    font-size: 4.2rem;
+  }
+  .breadcrumb li {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=common_Style.css.map */
