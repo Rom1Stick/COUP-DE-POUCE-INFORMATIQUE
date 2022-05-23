@@ -19,101 +19,78 @@
 </head>
 <body>
   
-<!-- HEADER : START -->
-
-<header>
-
-  <!-- NAV : START  -->
+  <!-- HEADER : START -->
   
-  <nav class="navbar navbar-light ">
-    <div class="container-fluid">
-      <span>
-        <a href="https://ville-cremieu.fr/" class="navbar-brand" target="_blank">
-          <img src="/ressources/images/logo_header.jpg" 
-                alt="Logo ville de Cremieu - Association Coup de Pouce Informatique"
-                  class="img-fluid navbar_Logo">
-        </a>
-      </span>
-
-      <button 
-        type="button"
-        class="navbar_Button navbar-toggler me-3"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offCanvasNavbar"
-        aria-controls="offCanvasNavbar">
-              
-        <span class="navbar-toggler-icon"></span> 
-
-      </button>
-
-      <div 
-        class="offcanvas offcanvas-end" 
-        data-bs-scroll="true"
-        tabindex="-1" 
-        id="offCanvasNavbar"
-        aria-labelledby="offCanvasNavbarLabel">
-
-        <div class="offcanvas-header">
-          <h1 class="offcanvas-title" id="offCanvasNavbarLabel">Coup de pouce Informatique</h1>
-
-          <button 
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close">
-          </button>
-        </div>
-
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 ms-1">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/home.html">Accueil</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a 
-                class="nav-link dropdown-toggle" 
-                href="#" 
-                id="offcanvasNavbarDropdown" 
-                role="button" 
-                data-bs-toggle="dropdown" 
-                aria-expanded="false">
-
-                Evènements
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-
-                <li><a class="dropdown-item" href="#">Évènement</a></li>
-                <li><a class="dropdown-item" href="#">Actualité</a></li>
-                <li><a class="dropdown-item" href="#">Retour sur expérience</a></li>
-
-              </ul>
-            </li>
-          </ul>
-
-          <form class="d-flex mt-2">
-            <input 
-              class="form-control me-2" 
-              type="search" 
-              placeholder="Rechercher"
-              aria-label="Search">
-
-            <button type="submit" class="btn btn-outline-info">GO</button>
-          </form>
-        </div>
-      </div>
-    </div>
-
+  <header>
     
+   <!-- NAV : START  -->
+          
+   <nav class="navbar">
+      
+    <ul class="sidenav">
+  
+      <li class="btn_nav active_lg">
+  
+        <a href="/home.html" class="header_Link">
+          Accueil
+        </a>
+      </li>
+      
+      <li class="btn_Nav">
+  
+        <a href="/Event_Page/event.html" class="header_Link btn_Nav__Event active">
+          Évènements
+        </a>
+      </li>
+      
+      <li class="btn_Nav btn_Nav__Contact">
+  
+        <a href="#" class="header_Link">
+          Contact
+        </a>
+      </li>
+    </ul>
   </nav>
   
   <!-- NAV : END -->
+    
+    <!-- TITLE : START  -->
+    
+    <section class="title">
+      <div class="flux">
+        <div class="title_container"> 
+          
+          <h1>Actualités</h1>
+        </div>
+      </div>
+    </section>
+    
+    <!-- BREADCRUMB : START  -->
+    
+    <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb breadcrumb_Container">
+    
+      <ol class="breadcrumb">
+      
+        <li class="breadcrumb-item">
+          <a href="https://ville-cremieu.fr/" target="_blank">Cremieu</a>
+        </li>
+    
+        <li class="breadcrumb-item">
+          <a href="https://ville-cremieu.fr/jeunesse/associations/" target="_blank">Association</a>
+        </li>
+    
+        <li class="breadcrumb-item">
+          <a href="/home.html">Coup de Pouce Informatique</a>
+        </li>
+    
+        <li class="breadcrumb-item active" aria-current="page">Évènements</li>
+      </ol>
+    </section>
+    
+    <!-- BREADCRUMB : END  -->
+
+    <!-- TITLE : END  -->
+    
   
 </header>
   
@@ -122,44 +99,6 @@
 <!-- MAIN : START -->
 
 <main>
-
-  <!-- TITLE : START  -->
-  
-  <section class="title">
-    <div class="flux">
-      <div class="title_container"> 
-        
-        <h1>Évènements</h1>
-      </div>
-    </div>
-  </section>
-  
-  <!-- TITLE : END  -->
-  
-  <!-- BREADCRUMB : START  -->
-  
-  <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb breadcrumb_Container">
-  
-    <ol class="breadcrumb">
-    
-      <li class="breadcrumb-item">
-        <a href="https://ville-cremieu.fr/" target="_blank">Cremieu</a>
-      </li>
-
-      <li class="breadcrumb-item">
-        <a href="https://ville-cremieu.fr/jeunesse/associations/" target="_blank">Association</a>
-      </li>
-
-      <li class="breadcrumb-item">
-        <a href="/home.html">Coup de pouce Informatique</a>
-      </li>
-
-      <li class="breadcrumb-item active" aria-current="page">évènements</li>
-    </ol>
-  </section>
-  
-  <!-- BREADCRUMB : END  -->
-
                             <!-- FIRST SECTION : START  -->
 <section class="section_Card__Container">
 

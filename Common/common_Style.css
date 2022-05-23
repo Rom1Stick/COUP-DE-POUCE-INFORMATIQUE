@@ -2,40 +2,60 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.navbar .navbar_Logo {
-  margin-left: 5vw;
-  width: 60vw;
-  border-radius: 5%;
-}
-
-.navbar .navbar_Button {
-  border: solid black;
+.navbar {
   background-color: #dffbfb;
+  padding-bottom: 0;
 }
 
-.navbar .navbar_Button .navbar-toggler-icon {
-  width: 8vw;
-}
-
-.navbar .offcanvas {
-  background-color: #dffbfb;
-}
-
-.navbar .offcanvas .offcanvas-header h1 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #2aacaa;
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
-.navbar .offcanvas .offcanvas-body a {
-  font-weight: bold;
+.navbar ul li {
+  display: block;
+  text-align: center;
+  width: auto;
+  height: 8vh;
+  font-size: 0.75rem;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: black;
+  background-color: #dffbfb;
+  float: left;
 }
 
-.navbar .offcanvas .offcanvas-body .btn {
-  background-color: white;
-  border: solid;
-  font-weight: bold;
+.navbar ul li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 2vh 2vh 4vh 2vh;
+  margin: 0 4vw;
+  border-radius: 0 50% 0 0;
+  width: 30vw;
+}
+
+.navbar ul li a:hover {
+  background-color: #37aeac;
+  color: white;
+}
+
+.navbar ul li .active {
+  background-color: #37aeac;
+  color: white;
+}
+
+.navbar ul li .btn_Nav__Contact {
+  border-radius: 50% 0 0 0;
 }
 
 .title {
@@ -49,12 +69,12 @@ body {
 .title h1 {
   font-weight: bold;
   font-size: 1.4rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0 0;
   color: white;
 }
 
 .breadcrumb {
-  font-size: 1.5vh;
+  font-size: 1rem;
   margin: 0 0 0 0;
   background-color: #11a7a5;
 }
@@ -125,32 +145,31 @@ footer .footer_Container .footer_Container__Address p {
 
 footer .footer_Container .footer_Container__Address p a {
   color: black;
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   font-weight: 600;
   text-decoration: none;
+}
+
+@media screen and (max-width: 426px) {
+  .navbar .navbar_Logo {
+    display: none;
+  }
+  .breadcrumb .breadcrumb-item {
+    font-size: 0.5rem;
+  }
+  .card_Description .card_Container__Image img {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   p {
     font-size: 1.6rem;
   }
-  .navbar .navbar_Logo {
-    margin: 0;
-    height: 15vh;
+  .navbar ul li a {
+    padding: 1vh 10vh 4vh 2vh;
+    font-size: 1rem;
     width: 30vw;
-  }
-  .navbar .navbar_Button .navbar-toggler-icon {
-    width: 8vh;
-    height: 8vh;
-  }
-  .navbar .offcanvas .offcanvas-header h1 {
-    font-size: 1.5rem;
-  }
-  .navbar .offcanvas .offcanvas-body a {
-    font-size: 1.3rem;
-  }
-  .navbar .offcanvas .offcanvas-body form {
-    height: 6vh;
   }
   .title h1 {
     font-size: 3rem;
@@ -170,18 +189,11 @@ footer .footer_Container .footer_Container__Address p a {
   p {
     font-size: 2rem;
   }
-  .navbar .navbar_Logo {
+  .navbar ul li a {
+    padding: 1vh 10vh 4vh 2vh;
     margin: 0;
-    width: 40vh;
-  }
-  .navbar .offcanvas .offcanvas-header h1 {
     font-size: 1.5rem;
-  }
-  .navbar .offcanvas .offcanvas-body a {
-    font-size: 1.4rem;
-  }
-  .navbar .offcanvas .offcanvas-body form {
-    height: 8vh;
+    width: 35vw;
   }
   .title h1 {
     font-size: 4.2rem;
@@ -201,18 +213,8 @@ footer .footer_Container .footer_Container__Address p a {
   p {
     font-size: 2.2rem;
   }
-  .navbar .navbar_Logo {
-    margin: 0;
-    width: 45vh;
-  }
-  .navbar .offcanvas .offcanvas-header h1 {
-    font-size: 1.5rem;
-  }
-  .navbar .offcanvas .offcanvas-body a {
-    font-size: 1.4rem;
-  }
-  .navbar .offcanvas .offcanvas-body form {
-    height: 8vh;
+  .navbar ul li a {
+    font-size: 1.9rem;
   }
   .title h1 {
     font-size: 5.5rem;
