@@ -11,9 +11,9 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (50px)[10];
-      grid-template-rows: repeat(10, 50px);
-      grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "category category" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "btnSubmit btn";
+  -ms-grid-rows: (10%)[10];
+      grid-template-rows: repeat(10, 10%);
+      grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "category category" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "btnSubmit btnReset";
   text-align: center;
 }
 
@@ -24,14 +24,14 @@ body {
 
 .form form label {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #2aacaa;
 }
 
 .form form select {
-  border: solid #2aacaa 2px;
+  border: solid #2aacaa;
   width: 60%;
-  height: 3vh;
+  height: 6vh;
 }
 
 .form form .form_Name {
@@ -62,7 +62,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: email;
-  margin-top: 4vh;
+  margin-top: 6vh;
 }
 
 .form form .form_Email input {
@@ -75,10 +75,6 @@ body {
   -ms-grid-column-span: 2;
   grid-area: civility;
   margin-top: 3vh;
-}
-
-.form form .form_Civility select {
-  width: 50%;
 }
 
 .form form .form_Phone {
@@ -111,7 +107,7 @@ body {
 }
 
 .form form .form_Skill textarea {
-  margin: 5% auto 0 auto;
+  margin: 1vh auto 0 auto;
   height: 25%;
 }
 
@@ -121,7 +117,7 @@ body {
   font-weight: 800;
 }
 
-.form form .form_Button__Submit {
+.form form .form_Button__Submit button {
   -ms-grid-row: 10;
   -ms-grid-column: 1;
   grid-area: btnSubmit;
@@ -130,12 +126,160 @@ body {
   margin-bottom: 10vh;
 }
 
-.form form .form_Button__Reset {
+.form form .form_Button__Reset button {
   -ms-grid-row: 10;
   -ms-grid-column: 2;
-  grid-area: btn;
+  grid-area: btnReset;
   text-align: center;
   font-weight: bold;
   margin-bottom: 10vh;
+}
+
+@media screen and (min-width: 768px) {
+  .title h1 {
+    font-size: 2.2rem;
+  }
+  .form form {
+    margin: 0 auto 0 auto;
+    width: 75%;
+  }
+  .form form input {
+    font-size: 1.2rem;
+    height: 7vh;
+  }
+  .form form label {
+    font-size: 1.4rem;
+  }
+  .form form select {
+    width: 45%;
+    height: 7vh;
+  }
+  .form form .form_Name input {
+    width: 75%;
+  }
+  .form form .form_Vorname input {
+    width: 75%;
+  }
+  .form form .form_Email input {
+    width: 75%;
+  }
+  .form form .form_Civility {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+  }
+  .form form .form_Phone {
+    margin-top: 2vh;
+  }
+  .form form .form_Phone input {
+    width: 30%;
+  }
+  .form form .form_Category {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+  }
+  .form form .form_Skill textarea {
+    height: 20vh;
+  }
+  .form form .form_Skill label {
+    font-size: 1.4rem;
+  }
+  .form form .form_Button__Submit button {
+    width: 30vw;
+    font-size: 1.2rem;
+  }
+  .form form .form_Button__Reset button {
+    width: 30vw;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+  .form form {
+    width: 75%;
+  }
+  .form form input {
+    font-size: 1.5rem;
+  }
+  .form form label {
+    font-size: 2rem;
+  }
+  .form form select {
+    width: 40%;
+  }
+  .form form .form_Name input {
+    width: 70%;
+  }
+  .form form .form_Vorname input {
+    width: 70%;
+  }
+  .form form .form_Email {
+    margin-top: 8vh;
+  }
+  .form form .form_Civility {
+    font-size: 1.5rem;
+  }
+  .form form .form_Phone input {
+    width: 25%;
+  }
+  .form form .form_Category {
+    font-size: 1.5rem;
+  }
+  .form form .form_Skill textarea {
+    height: 20vh;
+  }
+  .form form .form_Skill label {
+    font-size: 2rem;
+  }
+  .form form .form_Button__Submit button {
+    width: 25vw;
+    font-size: 1.6rem;
+  }
+  .form form .form_Button__Reset button {
+    width: 25vw;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title h1 {
+    font-size: 3.5rem;
+  }
+  .form form {
+    width: 65%;
+  }
+  .form form input {
+    font-size: 2rem;
+    height: 7vh;
+  }
+  .form form label {
+    font-size: 2.4rem;
+  }
+  .form form select {
+    width: 35%;
+  }
+  .form form .form_Email {
+    margin-top: 11vh;
+  }
+  .form form .form_Civility {
+    font-size: 2rem;
+  }
+  .form form .form_Phone input {
+    width: 25%;
+  }
+  .form form .form_Category {
+    font-size: 2rem;
+  }
+  .form form .form_Skill label {
+    font-size: 2.5rem;
+  }
+  .form form .form_Button__Submit button {
+    font-size: 2rem;
+  }
+  .form form .form_Button__Reset button {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

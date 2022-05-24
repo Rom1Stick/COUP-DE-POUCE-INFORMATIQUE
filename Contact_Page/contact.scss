@@ -11,6 +11,8 @@ body {
  background-color: $azure;
 }
 
+// MIXIN
+
 @mixin input {
   border-radius: 2%;
   border: solid $azure_Bold 2px;
@@ -18,7 +20,7 @@ body {
  
 @mixin label {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: $azure_Bold;
 }
 
@@ -30,11 +32,13 @@ body {
   }
 }
 
+// FIRST SECTION
+
 .form {
   form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, 50px);
+    grid-template-rows: repeat(10, 10%);
     grid-template-areas: 
     "name vorname"
     "email email"
@@ -45,7 +49,7 @@ body {
     "skillTitle skillTitle"
     "skillTitle skillTitle"
     "skillTitle skillTitle"
-    "btnSubmit btn";
+    "btnSubmit btnReset";
     text-align: center;
       
     input {
@@ -58,9 +62,9 @@ body {
     }
 
     select {
-      border: solid $azure_Bold 2px;
+      border: solid $azure_Bold;
       width: 60%;
-      height: 3vh
+      height: 6vh;
     }
     
     .form_Name {
@@ -83,7 +87,7 @@ body {
     
     .form_Email{
       grid-area: email;
-      margin-top: 4vh;
+      margin-top: 6vh;
       
       input{
         width: 80%;
@@ -93,11 +97,6 @@ body {
     .form_Civility {
       grid-area: civility;
       margin-top: 3vh;
-      
-      select {
-        width: 50%;
-        // height: 6vh
-      }
     }
     
     .form_Phone {
@@ -119,7 +118,7 @@ body {
       margin: 2vh 5% 0 5%;
       
       textarea {
-        margin: 5% auto 0 auto;
+        margin: 1vh auto 0 auto;
         height: 25%;
       }
       
@@ -131,7 +130,7 @@ body {
     }
 
 
-    .form_Button__Submit {
+    .form_Button__Submit button {
       grid-area: btnSubmit;
       text-align: center;
       font-weight: bold;
@@ -139,11 +138,251 @@ body {
 
     }
     
-    .form_Button__Reset {
-      grid-area: btn;
+    .form_Button__Reset button {
+      grid-area: btnReset;
       text-align: center;
       font-weight: bold;
       margin-bottom: 10vh;
+    }
+  }
+}
+
+// RESPONSIVE TABLET 
+
+@media screen and (min-width: 768px) {
+  
+  .title {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .form {
+    form {
+      margin: 0 auto 0 auto;
+      width: 75%;
+        
+      input {
+        font-size: 1.2rem;
+        height: 7vh;
+      }
+        
+      label {
+        font-size: 1.4rem;
+      }
+  
+      select {
+        width: 45%;
+        height: 7vh;
+      }
+      
+      .form_Name {
+        
+        input {
+          width: 75%;
+        }
+      }
+      
+      .form_Vorname{
+        
+        input {
+          width: 75%;
+        }
+      }
+      
+      .form_Email{
+        
+        input{
+          width: 75%;
+        }
+      }
+      
+      .form_Civility {
+        margin-top: 2vh;
+        font-size: 1.2rem;
+      }
+      
+      .form_Phone {
+        margin-top: 2vh;
+  
+        input {
+          width: 30%;
+        }
+      }
+  
+      .form_Category{
+        margin-top: 2vh;
+        font-size: 1.2rem;
+      }
+      
+      .form_Skill {
+
+        textarea {
+          height: 20vh;
+        }
+        
+        label {
+          font-size: 1.4rem;
+        }
+      }
+  
+      .form_Button__Submit button {
+        width: 30vw;
+        font-size: 1.2rem;
+      }
+      
+      .form_Button__Reset button {
+        width: 30vw;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// RESPONSIVE LAPTOP
+
+@media screen and (min-width: 1024px) {
+  
+  .title {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .form {
+    form {
+      width: 75%;
+        
+      input {
+        font-size: 1.5rem;
+      }
+        
+      label {
+        font-size: 2rem;
+      }
+  
+      select {
+        width: 40%;
+      }
+      
+      .form_Name {
+        
+        input {
+          width: 70%;
+        }
+      }
+      
+      .form_Vorname{
+        
+        input {
+          width: 70%;
+        }
+      }
+      
+      .form_Email{
+        margin-top: 8vh;
+       
+      }
+      
+      .form_Civility {
+        font-size: 1.5rem;
+      }
+      
+      .form_Phone {
+  
+        input {
+          width: 25%;
+        }
+      }
+  
+      .form_Category{
+        font-size: 1.5rem;
+      }
+      
+      .form_Skill {
+
+        textarea {
+          height: 20vh;
+        }
+        
+        label {
+          font-size: 2rem;
+        }
+      }
+  
+      .form_Button__Submit button {
+        width: 25vw;
+        font-size: 1.6rem;
+      }
+      
+      .form_Button__Reset button {
+        width: 25vw;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+// RESPONSIVE SCREEN >= 1200px
+
+@media screen and (min-width: 1200px) {
+  
+  .title {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .form {
+    form {
+      width: 65%;
+        
+      input {
+        font-size: 2rem;
+        height: 7vh;
+      }
+        
+      label {
+        font-size: 2.4rem;
+      }
+  
+      select {
+        width: 35%;
+      }
+      
+      .form_Email {
+        margin-top: 11vh;
+      }
+
+      .form_Civility {
+        font-size: 2rem;
+      }
+      
+      .form_Phone {
+  
+        input {
+          width: 25%;
+        }
+      }
+  
+      .form_Category{
+        font-size: 2rem;
+      }
+      
+      .form_Skill {
+
+        label {
+          font-size: 2.5rem;
+        }
+      }
+  
+      .form_Button__Submit button {
+        font-size: 2rem;
+      }
+      
+      .form_Button__Reset button {
+        font-size: 2rem;
+      }
     }
   }
 }
