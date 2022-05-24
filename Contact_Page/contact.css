@@ -1,1 +1,141 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+body {
+  background-color: #dffbfb;
+}
+
+.title h1 {
+  font-size: 1.3rem;
+}
+
+.form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (50px)[10];
+      grid-template-rows: repeat(10, 50px);
+      grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "category category" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "btnSubmit btn";
+  text-align: center;
+}
+
+.form form input {
+  border-radius: 2%;
+  border: solid #2aacaa 2px;
+}
+
+.form form label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2aacaa;
+}
+
+.form form select {
+  border: solid #2aacaa 2px;
+  width: 60%;
+  height: 3vh;
+}
+
+.form form .form_Name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+  margin: 5% 0;
+}
+
+.form form .form_Name input {
+  width: 95%;
+}
+
+.form form .form_Vorname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: vorname;
+  margin: 5% 0;
+}
+
+.form form .form_Vorname input {
+  width: 95%;
+}
+
+.form form .form_Email {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: email;
+  margin-top: 4vh;
+}
+
+.form form .form_Email input {
+  width: 80%;
+}
+
+.form form .form_Civility {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: civility;
+  margin-top: 3vh;
+}
+
+.form form .form_Civility select {
+  width: 50%;
+}
+
+.form form .form_Phone {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: phone;
+  margin-top: 4vh;
+}
+
+.form form .form_Phone input {
+  width: 45%;
+}
+
+.form form .form_Category {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: category;
+  margin-top: 4vh;
+}
+
+.form form .form_Skill {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: skillTitle;
+  margin: 2vh 5% 0 5%;
+}
+
+.form form .form_Skill textarea {
+  margin: 5% auto 0 auto;
+  height: 25%;
+}
+
+.form form .form_Skill label {
+  color: #2aacaa;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.form form .form_Button__Submit {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: btnSubmit;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
+
+.form form .form_Button__Reset {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  grid-area: btn;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
+/*# sourceMappingURL=contact.css.map */

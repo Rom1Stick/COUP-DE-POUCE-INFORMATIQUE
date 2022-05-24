@@ -1,0 +1,149 @@
+// COLOR
+$cyan: hsla(179, 46%, 48%, 0.786);
+$azure: hsl(180, 77%, 93%);
+$azure_Bold: hsl(179, 61%, 42%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+// BODY
+
+body {
+ background-color: $azure;
+}
+
+@mixin input {
+  border-radius: 2%;
+  border: solid $azure_Bold 2px;
+ }
+ 
+@mixin label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: $azure_Bold;
+}
+
+// TITLE 
+
+.title {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+.form {
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    grid-template-areas: 
+    "name vorname"
+    "email email"
+    "email email"
+    "civility civility"
+    "phone phone"
+    "category category"
+    "skillTitle skillTitle"
+    "skillTitle skillTitle"
+    "skillTitle skillTitle"
+    "btnSubmit btn";
+    text-align: center;
+      
+    input {
+      @include input;
+    }
+      
+    label {
+      @include label;
+
+    }
+
+    select {
+      border: solid $azure_Bold 2px;
+      width: 60%;
+      height: 3vh
+    }
+    
+    .form_Name {
+      grid-area: name;
+      margin: 5% 0;
+      
+      input {
+        width: 95%;
+      }
+    }
+    
+    .form_Vorname{
+      grid-area: vorname;
+      margin: 5% 0;
+      
+      input {
+        width: 95%;
+      }
+    }
+    
+    .form_Email{
+      grid-area: email;
+      margin-top: 4vh;
+      
+      input{
+        width: 80%;
+      }
+    }
+    
+    .form_Civility {
+      grid-area: civility;
+      margin-top: 3vh;
+      
+      select {
+        width: 50%;
+        // height: 6vh
+      }
+    }
+    
+    .form_Phone {
+      grid-area: phone;
+      margin-top: 4vh;
+
+      input {
+        width: 45%;
+      }
+    }
+
+    .form_Category {
+      grid-area: category;
+      margin-top: 4vh;
+    }
+    
+    .form_Skill {
+      grid-area: skillTitle;
+      margin: 2vh 5% 0 5%;
+      
+      textarea {
+        margin: 5% auto 0 auto;
+        height: 25%;
+      }
+      
+      label {
+        color: $azure_Bold;
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+    }
+
+
+    .form_Button__Submit {
+      grid-area: btnSubmit;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10vh;
+
+    }
+    
+    .form_Button__Reset {
+      grid-area: btn;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10vh;
+    }
+  }
+}
