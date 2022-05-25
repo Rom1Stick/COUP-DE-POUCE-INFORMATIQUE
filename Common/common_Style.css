@@ -108,8 +108,6 @@ footer .footer_Container {
 }
 
 footer .footer_Container .footer_Container__Img2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: logo2;
 }
 
@@ -120,8 +118,6 @@ footer .footer_Container .footer_Container__Img2 img {
 }
 
 footer .footer_Container .footer_Container__Img1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: logo1;
 }
 
@@ -132,8 +128,6 @@ footer .footer_Container .footer_Container__Img1 img {
 }
 
 footer .footer_Container .footer_Container__Address {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: text;
   text-align: center;
 }
