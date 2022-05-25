@@ -133,8 +133,6 @@ footer .footer_Container {
 }
 
 footer .footer_Container .footer_Container__Img2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: logo2;
 }
 
@@ -145,8 +143,6 @@ footer .footer_Container .footer_Container__Img2 img {
 }
 
 footer .footer_Container .footer_Container__Img1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: logo1;
 }
 
@@ -157,8 +153,6 @@ footer .footer_Container .footer_Container__Img1 img {
 }
 
 footer .footer_Container .footer_Container__Address {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: text;
   text-align: center;
 }
@@ -264,11 +258,18 @@ body {
 .form form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (10%)[10];
       grid-template-rows: repeat(10, 10%);
-      grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "category category" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "btnSubmit btnReset";
+      grid-template-areas: "name vorname"
+ "email email"
+ "email email"
+ "civility civility"
+ "phone phone"
+ "category category"
+ "skillTitle skillTitle"
+ "skillTitle skillTitle"
+ "skillTitle skillTitle"
+ "btnSubmit btnReset";
   text-align: center;
   margin: 15vh auto 15vh auto;
   background-color: #2aacaa;
@@ -295,8 +296,6 @@ body {
 }
 
 .form form .form_Name {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: name;
   margin: 5% 0;
 }
@@ -306,8 +305,6 @@ body {
 }
 
 .form form .form_Vorname {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: vorname;
   margin: 5% 0;
 }
@@ -317,9 +314,7 @@ body {
 }
 
 .form form .form_Email {
-  -ms-grid-row: 2;
   -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: email;
   margin-top: 6vh;
@@ -330,16 +325,12 @@ body {
 }
 
 .form form .form_Civility {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: civility;
   margin-top: 3vh;
 }
 
 .form form .form_Phone {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: phone;
   margin-top: 4vh;
@@ -350,17 +341,13 @@ body {
 }
 
 .form form .form_Category {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: category;
   margin-top: 4vh;
 }
 
 .form form .form_Skill {
-  -ms-grid-row: 7;
   -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: skillTitle;
   margin: 2vh 5% 0 5%;
@@ -378,8 +365,6 @@ body {
 }
 
 .form form .form_Button__Submit button {
-  -ms-grid-row: 10;
-  -ms-grid-column: 1;
   grid-area: btnSubmit;
   text-align: center;
   font-weight: bold;
@@ -389,8 +374,6 @@ body {
 }
 
 .form form .form_Button__Reset button {
-  -ms-grid-row: 10;
-  -ms-grid-column: 2;
   grid-area: btnReset;
   text-align: center;
   font-weight: bold;
