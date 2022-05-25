@@ -67,6 +67,7 @@ main {
     grid-area: card1;
   }
   .section_Card__Container .card_Second {
+
     grid-area: card2;
   }
   .section_Card__Container .card_Third {
