@@ -15,13 +15,14 @@ body {
 
 @mixin input {
   border-radius: 2%;
-  border: solid $azure_Bold 2px;
+  border: solid $azure 2px;
+  background-color: $azure;
  }
  
 @mixin label {
   font-weight: bold;
   font-size: 1rem;
-  color: $azure_Bold;
+  color: $white;
 }
 
 // TITLE 
@@ -51,6 +52,10 @@ body {
     "skillTitle skillTitle"
     "btnSubmit btnReset";
     text-align: center;
+    margin: 15vh auto 15vh auto;
+    background-color: $azure_Bold;
+    border-radius: 10%;
+
       
     input {
       @include input;
@@ -62,7 +67,8 @@ body {
     }
 
     select {
-      border: solid $azure_Bold;
+      border: solid $azure;
+      background-color: $azure;
       width: 60%;
       height: 6vh;
     }
@@ -124,7 +130,7 @@ body {
       
       label {
         color: $azure_Bold;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 800;
       }
     }
@@ -135,6 +141,8 @@ body {
       text-align: center;
       font-weight: bold;
       margin-bottom: 10vh;
+      background-color: $azure;
+      color: $azure_Bold;
 
     }
     
@@ -159,7 +167,6 @@ body {
 
   .form {
     form {
-      margin: 0 auto 0 auto;
       width: 75%;
         
       input {

@@ -3,7 +3,7 @@
   text-align: center;
   width: 100%;
   text-decoration: none;
-  margin: 4vh auto 0 auto;
+  margin: 4vh auto 4vh auto;
   margin: 0 auto 0 auto;
 }
 
@@ -16,8 +16,8 @@
 .card_Description .card_Container__Text {
   display: block;
   width: 76%;
-  margin: 5vh auto 0 auto;
-  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto 4vh auto;
+  padding: 4vh;
   border: solid rgba(66, 179, 177, 0.786) 5px;
   border-radius: 15%;
   background-color: #dffbfb;
@@ -37,15 +37,15 @@
   text-align: center;
   width: 100%;
   text-decoration: none;
-  margin: 4vh auto 0 auto;
+  margin: 4vh auto 4vh auto;
   padding-top: 0;
 }
 
 .card_Information .card_Container__Text {
   display: block;
   width: 76%;
-  margin: 5vh auto 0 auto;
-  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto 4vh auto;
+  padding: 4vh;
   border: solid rgba(66, 179, 177, 0.786) 5px;
   border-radius: 15%;
   background-color: #dffbfb;
@@ -72,6 +72,8 @@
   font-size: 1rem;
   font-weight: 900;
   color: white;
+  background-color: #dffbfb;
+  color: #2aacaa;
 }
 
 .card_Information .card_Container__Text .btn_Info:hover {
@@ -84,15 +86,15 @@
   text-align: center;
   width: 100%;
   text-decoration: none;
-  margin: 4vh auto 0 auto;
-  margin-bottom: 5%;
+  margin: 4vh auto 4vh auto;
+  margin-bottom: 7vh;
 }
 
 .card_Contact .card_Container__Text {
   display: block;
   width: 76%;
-  margin: 5vh auto 0 auto;
-  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto 4vh auto;
+  padding: 4vh;
   border: solid rgba(66, 179, 177, 0.786) 5px;
   border-radius: 15%;
   background-color: #dffbfb;
@@ -127,6 +129,8 @@
 .card_Contact .card_Container__Text .btn_Info {
   font-size: 1rem;
   font-weight: 900;
+  color: white;
+  background-color: #2aacaa;
   color: white;
 }
 
@@ -412,7 +416,7 @@
     height: 60vh;
   }
   .card_Description .card_Container__Text {
-    width: 45%;
+    width: 55%;
   }
   .card_Information .information_Text {
     height: 20%;
@@ -427,7 +431,7 @@
     margin-bottom: 2%;
   }
   .card_Contact .card_Container__Text {
-    width: 45%;
+    width: 55%;
   }
   .card_Contact .card_Container__Text a {
     font-size: 1.8rem;
@@ -504,7 +508,7 @@
     height: 55vh;
   }
   .card_Description .card_Container__Text {
-    width: 35%;
+    width: 40%;
   }
   .card_Information .information_Text {
     height: 20%;
@@ -519,7 +523,7 @@
     margin-bottom: 2%;
   }
   .card_Contact .card_Container__Text {
-    width: 35%;
+    width: 40%;
   }
   .card_Contact .card_Container__Text .btn_Infos {
     width: 25%;

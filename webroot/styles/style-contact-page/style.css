@@ -15,21 +15,26 @@ body {
       grid-template-rows: repeat(10, 10%);
       grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "category category" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "btnSubmit btnReset";
   text-align: center;
+  margin: 15vh auto 15vh auto;
+  background-color: #2aacaa;
+  border-radius: 10%;
 }
 
 .form form input {
   border-radius: 2%;
-  border: solid #2aacaa 2px;
+  border: solid #dffbfb 2px;
+  background-color: #dffbfb;
 }
 
 .form form label {
   font-weight: bold;
   font-size: 1rem;
-  color: #2aacaa;
+  color: white;
 }
 
 .form form select {
-  border: solid #2aacaa;
+  border: solid #dffbfb;
+  background-color: #dffbfb;
   width: 60%;
   height: 6vh;
 }
@@ -113,7 +118,7 @@ body {
 
 .form form .form_Skill label {
   color: #2aacaa;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 800;
 }
 
@@ -124,6 +129,8 @@ body {
   text-align: center;
   font-weight: bold;
   margin-bottom: 10vh;
+  background-color: #dffbfb;
+  color: #2aacaa;
 }
 
 .form form .form_Button__Reset button {
@@ -140,7 +147,6 @@ body {
     font-size: 2.2rem;
   }
   .form form {
-    margin: 0 auto 0 auto;
     width: 75%;
   }
   .form form input {

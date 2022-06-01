@@ -20,14 +20,14 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
   text-align: center;
   width: 100%;
   text-decoration: none;
-  margin: 4vh auto 0 auto;
+  margin: 4vh auto 4vh auto;
 }
 
 @mixin card_Container {
   display: block;
   width: 76%;
-  margin: 5vh auto 0 auto;
-  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto 4vh auto;
+  padding: 4vh;
   border: solid $cyan 5px;
   border-radius: 15%;
   background-color: $azure;
@@ -100,6 +100,8 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
 
     .btn_Info {
       @include btn_Info;
+      background-color: $azure;
+      color: $azure_Bold;
     }
   }
 }
@@ -108,7 +110,7 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
 
 .card_Contact {
   @include Card;
-  margin-bottom: 5%;
+  margin-bottom: 7vh;
 
   .card_Container__Text {
     @include card_Container;
@@ -133,6 +135,8 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
 
     .btn_Info {
       @include btn_Info;
+      background-color: $azure_Bold;
+      color: $white;
     }
   }
 }
@@ -455,7 +459,7 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
     }
 
     .card_Container__Text{
-      width: 45%;
+      width: 55%;
     }
   }
 
@@ -478,7 +482,7 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
 
   .card_Contact {
     .card_Container__Text{
-      width: 45%;
+      width: 55%;
 
       a {
         font-size: 1.8rem;
@@ -595,7 +599,7 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
     }
 
     .card_Container__Text{
-      width: 35%;
+      width: 40%;
     }
   }
 
@@ -619,7 +623,7 @@ $section_Color__PhoneNumber : hsl(180, 70%, 38%);
   .card_Contact {
 
     .card_Container__Text{
-      width: 35%;
+      width: 40%;
       
       .btn_Infos {
         width: 25%;
