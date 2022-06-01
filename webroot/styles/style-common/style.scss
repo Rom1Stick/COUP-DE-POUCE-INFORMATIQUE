@@ -58,7 +58,7 @@ body {
         text-decoration: none;
         font-weight: 500;
         padding: 2vh 2vh 4vh 2vh;
-        margin: 0 4vw;
+        margin-right: 5vw;
         border-radius: 0 50% 0 0;
         width: 30vw;
 
@@ -76,6 +76,7 @@ body {
 
       .btn_Nav__Contact {
         border-radius: 50% 0 0 0;
+        margin: 0;
       }
     }
   }
@@ -260,10 +261,13 @@ footer {
       li {
       
         a {
-          padding: 1vh 10vh 4vh 2vh;
           margin: 0;
           font-size: 1.5rem;
           width: 35vw;
+        }
+
+        .btn_Nav__Contact {
+          width: 30vw;
         }
       }
     }

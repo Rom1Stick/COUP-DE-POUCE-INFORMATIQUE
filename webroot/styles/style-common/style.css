@@ -39,7 +39,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   padding: 2vh 2vh 4vh 2vh;
-  margin: 0 4vw;
+  margin-right: 5vw;
   border-radius: 0 50% 0 0;
   width: 30vw;
 }
@@ -56,6 +56,7 @@ body {
 
 .navbar ul li .btn_Nav__Contact {
   border-radius: 50% 0 0 0;
+  margin: 0;
 }
 
 .title {
@@ -190,10 +191,12 @@ footer .footer_Container .footer_Container__Address p a {
     font-size: 2rem;
   }
   .navbar ul li a {
-    padding: 1vh 10vh 4vh 2vh;
     margin: 0;
     font-size: 1.5rem;
     width: 35vw;
+  }
+  .navbar ul li .btn_Nav__Contact {
+    width: 30vw;
   }
   .title h1 {
     font-size: 4.2rem;
