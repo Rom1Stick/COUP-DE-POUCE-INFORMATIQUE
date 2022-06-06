@@ -1,0 +1,17 @@
+// FIRST SECTION
+
+.card_Description {
+  @include Card;
+  margin: 0 auto 0 auto;
+
+  .card_Container__Image img {
+    width: 100vw;
+    height: 15%;
+    margin: -1px 0 0 -1px;
+  }
+  
+  .card_Container__Text {
+    @include card_Container;
+    margin-top: 9vh;
+  }
+}

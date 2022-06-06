@@ -1,0 +1,34 @@
+// THIRD SECTION
+
+.card_Contact {
+  @include Card;
+  margin-bottom: 7vh;
+
+  .card_Container__Text {
+    @include card_Container;
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $black;
+      margin-bottom: 2vh;
+      text-decoration: underline;
+    }
+
+    strong {
+      color: $azure_Bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: $section_Color__PhoneNumber;
+      font-size: bold;
+    }
+
+    .btn_Info {
+      @include btn_Info;
+      background-color: $azure_Bold;
+      color: $white;
+    }
+  }
+}

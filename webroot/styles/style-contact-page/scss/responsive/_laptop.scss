@@ -1,0 +1,83 @@
+// RESPONSIVE LAPTOP
+
+@media screen and (min-width: 1024px) {
+  
+  .title {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .form {
+    form {
+      width: 75%;
+        
+      input {
+        font-size: 1.5rem;
+      }
+        
+      label {
+        font-size: 2rem;
+      }
+  
+      select {
+        width: 40%;
+      }
+      
+      .form_Name {
+        
+        input {
+          width: 70%;
+        }
+      }
+      
+      .form_Vorname{
+        
+        input {
+          width: 70%;
+        }
+      }
+      
+      .form_Email{
+        margin-top: 8vh;
+       
+      }
+      
+      .form_Civility {
+        font-size: 1.5rem;
+      }
+      
+      .form_Phone {
+  
+        input {
+          width: 25%;
+        }
+      }
+  
+      .form_Category{
+        font-size: 1.5rem;
+      }
+      
+      .form_Skill {
+
+        textarea {
+          height: 20vh;
+        }
+        
+        label {
+          font-size: 2rem;
+        }
+      }
+  
+      .form_Button__Submit button {
+        width: 25vw;
+        font-size: 1.6rem;
+      }
+      
+      .form_Button__Reset button {
+        width: 25vw;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

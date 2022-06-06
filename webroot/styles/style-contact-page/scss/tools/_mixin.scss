@@ -1,0 +1,13 @@
+// MIXIN
+
+@mixin input {
+  border-radius: 2%;
+  border: solid $azure 2px;
+  background-color: $azure;
+ }
+ 
+@mixin label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: $white;
+}

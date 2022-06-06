@@ -1,0 +1,47 @@
+//MIXIN : CARD
+@mixin Card {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 4vh auto 4vh auto;
+}
+
+@mixin card_Container {
+  display: block;
+  width: 76%;
+  margin: 0 auto 4vh auto;
+  padding: 4vh;
+  border: solid $cyan 5px;
+  border-radius: 15%;
+  background-color: $azure;
+
+  strong {
+    color: $card_Color__Strong;
+  }
+    
+  p {
+    font-weight: 900;
+  }
+}
+
+@mixin btn_Info {
+  font-size: 1rem;
+  font-weight: 900;
+  color: $white;
+
+    &:hover {
+      transform: scale(1.20);
+  }
+}
+
+@mixin input {
+ border-radius: 2%;
+ border: solid $white 2px;
+}
+
+@mixin label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: $white;
+}

@@ -1,0 +1,57 @@
+// RESPONSIVE LAPTOP
+
+@media screen and (min-width: 1024px) {
+  
+  .section_Card__Container {
+    display: grid;
+    grid-template-columns: 5% 1fr 2% 1fr 5%;
+    grid-template-rows: 43%  58%;
+    grid-template-areas: 
+    ". card1 . card2 ."
+    ". card3 card3 card3 .";
+    padding-bottom: 5%;
+  
+
+
+    .card {
+      display: block;
+      width: 40vw;
+      margin: 0 auto 0 auto;
+
+      .card-body {
+        p{
+          font-size: 1.2rem;
+        }
+
+        small {
+          font-size: 1.2rem;
+        }
+      }
+        
+        .img_Card {
+          height: 40vh;
+          width: 40vw;
+          margin: 0 auto 0 auto;
+        }
+      }
+      
+      .card_First {
+        grid-area: card1;
+      }
+      
+      .card_Second {
+        grid-area: card2;
+      }
+      
+      .card_Third {
+      grid-area: card3;
+      width: 75%;
+      
+      .img_Card__Third {
+        display: block;
+        margin: 0 auto 0 auto;
+        width: 50%;
+      }
+    }
+  }
+}

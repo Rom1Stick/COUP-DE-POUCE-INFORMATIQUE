@@ -1,0 +1,25 @@
+// SECOND SECTION
+
+.card_Information {
+  @include Card;
+  padding-top: 0;
+  
+  .card_Container__Text{
+    @include card_Container;
+    width: 100%;
+    height: 20%;
+    border: none;
+    border-radius: 0;
+    background-color: $azure_Bold;
+
+    strong {
+      color: $white;
+    }
+
+    .btn_Info {
+      @include btn_Info;
+      background-color: $azure;
+      color: $azure_Bold;
+    }
+  }
+}

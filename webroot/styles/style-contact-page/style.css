@@ -1,9 +1,9 @@
-body {
-  background-color: #dffbfb;
-}
-
 .title h1 {
   font-size: 1.3rem;
+}
+
+body {
+  background-color: #dffbfb;
 }
 
 .form form {

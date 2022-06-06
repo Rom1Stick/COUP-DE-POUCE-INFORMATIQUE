@@ -1,0 +1,121 @@
+// MODAL : CONTACT
+
+.modal_Contact {
+  height: 100vh;
+
+  .modal-header img {
+    width: 15%;
+    height: 130%;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 1.3rem;
+  }
+
+  .modal-body {
+    background-color: $cyan;
+
+    .form {
+      form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 40px);
+        grid-template-areas: 
+        "name vorname"
+        "email email"
+        "email email"
+        "civility civility"
+        "phone phone"
+        "skillTitle skillTitle"
+        "skillTitle skillTitle"
+        "skillTitle skillTitle"
+        "btnSubmit btn";
+        text-align: center;
+          
+        input {
+          @include input;
+        }
+          
+        label {
+          @include label;
+
+        }
+        
+        .form_Name {
+          grid-area: name;
+          margin: 5% 0;
+          
+          input {
+            width: 95%;
+          }
+        }
+        
+        .form_Vorname{
+          grid-area: vorname;
+          margin: 5% 0;
+          
+          input {
+            width: 95%;
+          }
+        }
+        
+        .form_Email{
+          grid-area: email;
+          margin-top: 3vh;
+          
+          input{
+            width: 80%;
+          }
+        }
+        
+        .form_Civility {
+          grid-area: civility;
+          margin-top: 4vh;
+          
+          select {
+            width: 50%;
+            height: 6vh
+          }
+        }
+        
+        .form_Phone {
+          grid-area: phone;
+          margin-top: 6vh;
+
+          input {
+            width: 45%;
+          }
+        }
+        .form_Skill {
+          grid-area: skillTitle;
+          margin: 5vh 5% 4vh 5%;
+          
+          textarea {
+            margin: 5% auto;
+            height: 70%;
+          }
+          
+          label {
+            color: $azure_Bold;
+            font-size: 0.75rem;
+            font-weight: 800;
+          }
+        }
+        .form_Button__Submit {
+          grid-area: btnSubmit;
+          text-align: center;
+          margin-top: 2vh;
+          font-weight: bold;
+        }
+        
+        .form_Button__Dismiss {
+          grid-area: btn;
+          text-align: center;
+          margin-top: 2vh;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

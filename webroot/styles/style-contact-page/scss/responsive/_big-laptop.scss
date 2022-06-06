@@ -1,0 +1,63 @@
+// RESPONSIVE SCREEN >= 1200px
+
+@media screen and (min-width: 1200px) {
+  
+  .title {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .form {
+    form {
+      width: 65%;
+        
+      input {
+        font-size: 2rem;
+        height: 7vh;
+      }
+        
+      label {
+        font-size: 2.4rem;
+      }
+  
+      select {
+        width: 35%;
+      }
+      
+      .form_Email {
+        margin-top: 11vh;
+      }
+
+      .form_Civility {
+        font-size: 2rem;
+      }
+      
+      .form_Phone {
+  
+        input {
+          width: 25%;
+        }
+      }
+  
+      .form_Category{
+        font-size: 2rem;
+      }
+      
+      .form_Skill {
+
+        label {
+          font-size: 2.5rem;
+        }
+      }
+  
+      .form_Button__Submit button {
+        font-size: 2rem;
+      }
+      
+      .form_Button__Reset button {
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,3 +1,26 @@
+/*
+ reset  
+*/
+* {
+  margin: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.flux {
+  display: block;
+  width: 100vw;
+  max-width: 2560px;
+  margin: 0 auto 0 auto;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -86,13 +109,6 @@ body {
 
 .breadcrumb .breadcrumb-item {
   color: white;
-}
-
-.flux {
-  display: block;
-  width: 100vw;
-  max-width: 2560px;
-  margin: 0 auto 0 auto;
 }
 
 footer {

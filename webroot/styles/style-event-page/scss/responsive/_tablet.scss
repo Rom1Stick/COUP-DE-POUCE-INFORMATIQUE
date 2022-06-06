@@ -1,0 +1,13 @@
+// RESPONSIVE TABLET 
+
+@media screen and (min-width: 768px) {
+  
+  .section_Card__Container{
+    padding-bottom: 3%;
+    .card {
+      .img_Card {
+        height: 60vh;
+      }
+    }
+  }
+}

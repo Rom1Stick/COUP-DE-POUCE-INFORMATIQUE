@@ -2,28 +2,142 @@ main {
   background-color: #dffbfb;
 }
 
-.card .img_Card {
-  height: 35vh;
+.modal_Contact {
+  height: 100vh;
 }
 
-.card .card-body .card-title {
+.modal_Contact .modal-header img {
+  width: 15%;
+  height: 130%;
+}
+
+.modal_Contact h3 {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.modal_Contact .modal-body {
+  background-color: rgba(66, 179, 177, 0.786);
+}
+
+.modal_Contact .modal-body .form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (40px)[8];
+      grid-template-rows: repeat(8, 40px);
+      grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "btnSubmit btn";
+  text-align: center;
+}
+
+.modal_Contact .modal-body .form form input {
+  border-radius: 2%;
+  border: solid white 2px;
+}
+
+.modal_Contact .modal-body .form form label {
   font-weight: bold;
   font-size: 1.2rem;
-  text-align: center;
+  color: white;
 }
 
-.card .card-body .card-text {
-  font-size: 0.8rem;
-  text-align: center;
+.modal_Contact .modal-body .form form .form_Name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+  margin: 5% 0;
 }
 
-.card .card-body .card-text:last-child {
-  font-size: 0.8rem;
+.modal_Contact .modal-body .form form .form_Name input {
+  width: 95%;
+}
+
+.modal_Contact .modal-body .form form .form_Vorname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: vorname;
+  margin: 5% 0;
+}
+
+.modal_Contact .modal-body .form form .form_Vorname input {
+  width: 95%;
+}
+
+.modal_Contact .modal-body .form form .form_Email {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: email;
+  margin-top: 3vh;
+}
+
+.modal_Contact .modal-body .form form .form_Email input {
+  width: 80%;
+}
+
+.modal_Contact .modal-body .form form .form_Civility {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: civility;
+  margin-top: 4vh;
+}
+
+.modal_Contact .modal-body .form form .form_Civility select {
+  width: 50%;
+  height: 6vh;
+}
+
+.modal_Contact .modal-body .form form .form_Phone {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: phone;
+  margin-top: 6vh;
+}
+
+.modal_Contact .modal-body .form form .form_Phone input {
+  width: 45%;
+}
+
+.modal_Contact .modal-body .form form .form_Skill {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: skillTitle;
+  margin: 5vh 5% 4vh 5%;
+}
+
+.modal_Contact .modal-body .form form .form_Skill textarea {
+  margin: 5% auto;
+  height: 70%;
+}
+
+.modal_Contact .modal-body .form form .form_Skill label {
+  color: #2aacaa;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.modal_Contact .modal-body .form form .form_Button__Submit {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: btnSubmit;
+  text-align: center;
+  margin-top: 2vh;
   font-weight: bold;
 }
 
-.card .card-body .card-text small {
-  color: #2aacaa;
+.modal_Contact .modal-body .form form .form_Button__Dismiss {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: btn;
+  text-align: center;
+  margin-top: 2vh;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {

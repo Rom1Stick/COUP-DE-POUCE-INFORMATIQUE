@@ -1,0 +1,55 @@
+// MODAL : SKILL
+
+.modal_Skill {
+  height: 100vh;
+  
+  .modal-header img {
+    width: 15%;
+    height: 130%;
+  }
+  
+  .modal-body{
+    background-color: $cyan;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: $white;
+      margin-bottom: -2vh;
+    }
+    
+    ul {
+      display: inline;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 2vh;
+      list-style: none;
+      margin: auto 0 auto 0;
+      
+        
+      li {
+        margin-top: 2vh;
+          
+        &:last-child {
+            margin-bottom: 5vh;
+        }
+      }
+    }
+  }
+  
+  .modal-footer {
+    display: block;
+    text-align: center;
+    // background-color: $white;
+    
+    p {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color:$white;
+    }
+
+    .btn-primary, .btn-secondary {
+      font-weight: bold;
+    }
+  }
+}

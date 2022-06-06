@@ -1,0 +1,52 @@
+// FOOTER 
+
+footer {
+  padding: 4vh 0 4vh 0;
+  background-color: $azure_Bold;
+  
+  .footer_Container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 2fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "logo2 logo1 text .";
+    padding: 1vh;
+    height: 75%;
+
+    .footer_Container__Img2 {
+      grid-area: logo2;
+      
+      img {
+        width: 70%;
+        float: right;
+        margin-right: 10%;
+      }
+    }
+
+    .footer_Container__Img1 {
+      grid-area: logo1;
+      
+      img {
+        width: 50%;
+        float: left;
+        margin-right: 10%;
+      }
+    }
+    
+    .footer_Container__Address {
+      grid-area: text;
+      text-align: center;
+
+      p {
+        font-size: 0.7rem;
+        color: $white;
+  
+        a {
+          color: $black;
+          font-size: 0.5rem;
+          font-weight: 600;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

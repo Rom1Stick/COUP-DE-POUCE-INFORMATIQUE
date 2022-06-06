@@ -1,0 +1,140 @@
+// RESPONSIVE LAPTOP
+
+@media screen and (min-width: 1024px) {
+  
+  .card_Description{
+    .card_Container__Image img {
+      height: 60vh;
+    }
+
+    .card_Container__Text{
+      width: 55%;
+    }
+  }
+
+  .card_Information{
+    .information_Text{
+      height: 20%;
+      
+      p{
+        margin: 1% 12% 2% 12%;
+      }
+      
+      .btn_Info {
+        width: 40%;
+        height: 20%;
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  .card_Contact {
+    .card_Container__Text{
+      width: 55%;
+
+      a {
+        font-size: 1.8rem;
+      }
+
+      .btn_Info {
+        width: 55%;
+        height: 20%;
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  .modal_Skill {
+    .modal-header {
+      height: 15vh;
+
+      img {
+        height: 15vh;
+        width: 15%;
+      }
+
+      button {
+        width : 5vw;
+      }
+    }
+
+    .modal-body {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      li {
+        font-size: 1.3rem;
+      }
+    }
+
+    .modal-footer {
+      p{
+        font-size: 2.5rem;
+      }
+
+      .btn-primary, .btn-secondary {
+        width: 40%;
+        height: 7vh;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .modal_Contact {
+    .modal-header {
+      height: 10vh;
+
+      img{
+        height: 130%;
+        width: 8vw;
+      }
+
+      button {
+        width : 5vw;
+      }
+    }
+    
+    .modal-body {
+      
+      h3 {
+        font-size: 2.4rem;
+      }
+      
+      .form {
+        form{
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: repeat(8, 45px);
+
+          input {
+            height: 5vh;
+          }
+        }
+
+        .form_Email, .form_Civility, .form_Phone {
+          label {
+            font-size: 1.6rem;
+          }
+        }
+
+        .form_Skill {
+          .form-floating {
+            label {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .btn-primary, .btn-secondary {
+          margin-top: 2vh;
+          width: 50%;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

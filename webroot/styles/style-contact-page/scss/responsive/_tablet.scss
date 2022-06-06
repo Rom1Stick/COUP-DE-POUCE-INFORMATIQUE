@@ -1,0 +1,90 @@
+// RESPONSIVE TABLET 
+
+@media screen and (min-width: 768px) {
+  
+  .title {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .form {
+    form {
+      width: 75%;
+        
+      input {
+        font-size: 1.2rem;
+        height: 7vh;
+      }
+        
+      label {
+        font-size: 1.4rem;
+      }
+  
+      select {
+        width: 45%;
+        height: 7vh;
+      }
+      
+      .form_Name {
+        
+        input {
+          width: 75%;
+        }
+      }
+      
+      .form_Vorname{
+        
+        input {
+          width: 75%;
+        }
+      }
+      
+      .form_Email{
+        
+        input{
+          width: 75%;
+        }
+      }
+      
+      .form_Civility {
+        margin-top: 2vh;
+        font-size: 1.2rem;
+      }
+      
+      .form_Phone {
+        margin-top: 2vh;
+  
+        input {
+          width: 30%;
+        }
+      }
+  
+      .form_Category{
+        margin-top: 2vh;
+        font-size: 1.2rem;
+      }
+      
+      .form_Skill {
+
+        textarea {
+          height: 20vh;
+        }
+        
+        label {
+          font-size: 1.4rem;
+        }
+      }
+  
+      .form_Button__Submit button {
+        width: 30vw;
+        font-size: 1.2rem;
+      }
+      
+      .form_Button__Reset button {
+        width: 30vw;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

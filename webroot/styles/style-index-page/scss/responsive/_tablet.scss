@@ -1,0 +1,129 @@
+// RESPONSIVE TABLET
+
+@media screen and (min-width: 768px) {
+
+  .card_Description{
+    .card_Container__Image img {
+      height: 60vh;
+    }
+
+    .card_Container__Text{
+      width: 50%;
+    }
+  }
+
+  .card_Information{
+    .information_Text{
+      height: 20%;
+      
+      p{
+        margin: 1% 12% 2% 12%;
+      }
+      
+      .btn_Info {
+        width: 40%;
+        height: 20%;
+        font-size: 1.4rem;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  .card_Contact {
+    .card_Container__Text{
+      width: 50%;
+
+      a {
+        font-size: 1.6rem;
+      }
+
+      .btn_Info {
+        width: 55%;
+        height: 20%;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .modal_Skill {
+    .modal-header {
+      height: 10vh;
+
+      button {
+        width : 5vw;
+      }
+    }
+
+    .modal-body {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      li {
+        font-size: 1.2rem;
+      }
+    }
+
+    .modal-footer {
+      p{
+        font-size: 2.5rem;
+      }
+
+      .btn-primary, .btn-secondary {
+        width: 40%;
+        height: 20%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .modal_Contact {
+    .modal-header {
+      height: 10vh;
+
+      button {
+        width : 5vw;
+      }
+    }
+    
+    .modal-body {
+      
+      h3 {
+        font-size: 2.4rem;
+      }
+      
+      .form {
+        input {
+          height: 4vh;
+        }
+
+        select#select_Civility {
+          height: 4vh;
+        }
+
+        .form_Email, .form_Civility, .form_Phone {
+          margin-top: 3vh;
+
+          label {
+            font-size: 1.6rem;
+          }
+        }
+
+        .form_Skill {
+          .form-floating {
+            label {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .btn-primary, .btn-secondary {
+          margin-top: 2vh;
+          width: 75%;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

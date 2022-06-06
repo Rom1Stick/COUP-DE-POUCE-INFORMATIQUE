@@ -1,0 +1,50 @@
+// RESPONSIVE TABLET
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+  }
+  
+  .navbar{
+    ul{
+      li {
+      
+        a {
+          padding: 1vh 10vh 4vh 2vh;
+          font-size: 1rem;
+          width: 30vw;
+        }
+      }
+    }
+  }
+  
+
+  .title {
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .breadcrumb{
+    li {
+      font-size: 0.9rem;
+    } 
+  }
+
+  footer {
+    .footer_Container {
+      
+      .footer_Container__Address {
+  
+        p {
+          font-size: 1.5rem;
+
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
