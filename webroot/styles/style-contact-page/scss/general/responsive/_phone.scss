@@ -1,0 +1,27 @@
+// RESPONSIVE PHONE
+
+@media screen and (max-width: 426px) {
+  .navbar {
+    .navbar_Logo {
+      display: none;
+    }
+  }
+
+
+  .breadcrumb {
+    .breadcrumb-item {
+
+        font-size: 0.5rem;
+      
+    }
+  }
+
+  .card_Description {
+    .card_Container__Image {
+
+      img {
+        display: none;
+      }
+    }
+  }
+}
