@@ -1,0 +1,550 @@
+.card_Description {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 4vh auto 0 auto;
+  margin: 0 auto 0 auto;
+}
+
+.card_Description .card_Container__Image img {
+  width: 100vw;
+  height: 15%;
+  margin: -1px 0 0 -1px;
+}
+
+.card_Description .card_Container__Text {
+  display: block;
+  width: 76%;
+  margin: 5vh auto 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  border: solid rgba(66, 179, 177, 0.786) 5px;
+  border-radius: 15%;
+  background-color: #dffbfb;
+  margin-top: 9vh;
+}
+
+.card_Description .card_Container__Text strong {
+  color: #42b3b1;
+}
+
+.card_Description .card_Container__Text p {
+  font-weight: 900;
+}
+
+.card_Information {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 4vh auto 0 auto;
+  padding-top: 0;
+}
+
+.card_Information .card_Container__Text {
+  display: block;
+  width: 76%;
+  margin: 5vh auto 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  border: solid rgba(66, 179, 177, 0.786) 5px;
+  border-radius: 15%;
+  background-color: #dffbfb;
+  width: 100%;
+  height: 20%;
+  border: none;
+  border-radius: 0;
+  background-color: #2aacaa;
+}
+
+.card_Information .card_Container__Text strong {
+  color: #42b3b1;
+}
+
+.card_Information .card_Container__Text p {
+  font-weight: 900;
+}
+
+.card_Information .card_Container__Text strong {
+  color: white;
+}
+
+.card_Information .card_Container__Text .btn_Info {
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+}
+
+.card_Information .card_Container__Text .btn_Info:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card_Contact {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 4vh auto 0 auto;
+  margin-bottom: 5%;
+}
+
+.card_Contact .card_Container__Text {
+  display: block;
+  width: 76%;
+  margin: 5vh auto 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  border: solid rgba(66, 179, 177, 0.786) 5px;
+  border-radius: 15%;
+  background-color: #dffbfb;
+}
+
+.card_Contact .card_Container__Text strong {
+  color: #42b3b1;
+}
+
+.card_Contact .card_Container__Text p {
+  font-weight: 900;
+}
+
+.card_Contact .card_Container__Text h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2vh;
+  text-decoration: underline;
+}
+
+.card_Contact .card_Container__Text strong {
+  color: #2aacaa;
+}
+
+.card_Contact .card_Container__Text a {
+  text-decoration: none;
+  color: #1da5a5;
+  font-size: bold;
+}
+
+.card_Contact .card_Container__Text .btn_Info {
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+}
+
+.card_Contact .card_Container__Text .btn_Info:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.modal_Skill {
+  height: 100vh;
+}
+
+.modal_Skill .modal-header img {
+  width: 15%;
+  height: 130%;
+}
+
+.modal_Skill .modal-body {
+  background-color: rgba(66, 179, 177, 0.786);
+}
+
+.modal_Skill .modal-body h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: -2vh;
+}
+
+.modal_Skill .modal-body ul {
+  display: inline;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 2vh;
+  list-style: none;
+  margin: auto 0 auto 0;
+}
+
+.modal_Skill .modal-body ul li {
+  margin-top: 2vh;
+}
+
+.modal_Skill .modal-body ul li:last-child {
+  margin-bottom: 5vh;
+}
+
+.modal_Skill .modal-footer {
+  display: block;
+  text-align: center;
+}
+
+.modal_Skill .modal-footer p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+.modal_Skill .modal-footer .btn-primary, .modal_Skill .modal-footer .btn-secondary {
+  font-weight: bold;
+}
+
+.modal_Contact {
+  height: 100vh;
+}
+
+.modal_Contact .modal-header img {
+  width: 15%;
+  height: 130%;
+}
+
+.modal_Contact h3 {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.modal_Contact .modal-body {
+  background-color: rgba(66, 179, 177, 0.786);
+}
+
+.modal_Contact .modal-body .form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (40px)[8];
+      grid-template-rows: repeat(8, 40px);
+      grid-template-areas: "name vorname" "email email" "email email" "civility civility" "phone phone" "skillTitle skillTitle" "skillTitle skillTitle" "skillTitle skillTitle" "btnSubmit btn";
+  text-align: center;
+}
+
+.modal_Contact .modal-body .form form input {
+  border-radius: 2%;
+  border: solid white 2px;
+}
+
+.modal_Contact .modal-body .form form label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.modal_Contact .modal-body .form form .form_Name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+  margin: 5% 0;
+}
+
+.modal_Contact .modal-body .form form .form_Name input {
+  width: 95%;
+}
+
+.modal_Contact .modal-body .form form .form_Vorname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: vorname;
+  margin: 5% 0;
+}
+
+.modal_Contact .modal-body .form form .form_Vorname input {
+  width: 95%;
+}
+
+.modal_Contact .modal-body .form form .form_Email {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: email;
+  margin-top: 3vh;
+}
+
+.modal_Contact .modal-body .form form .form_Email input {
+  width: 80%;
+}
+
+.modal_Contact .modal-body .form form .form_Civility {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: civility;
+  margin-top: 4vh;
+}
+
+.modal_Contact .modal-body .form form .form_Civility select {
+  width: 50%;
+  height: 6vh;
+}
+
+.modal_Contact .modal-body .form form .form_Phone {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: phone;
+  margin-top: 6vh;
+}
+
+.modal_Contact .modal-body .form form .form_Phone input {
+  width: 45%;
+}
+
+.modal_Contact .modal-body .form form .form_Skill {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: skillTitle;
+  margin: 5vh 5% 4vh 5%;
+}
+
+.modal_Contact .modal-body .form form .form_Skill textarea {
+  margin: 5% auto;
+  height: 70%;
+}
+
+.modal_Contact .modal-body .form form .form_Skill label {
+  color: #2aacaa;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.modal_Contact .modal-body .form form .form_Button__Submit {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: btnSubmit;
+  text-align: center;
+  margin-top: 2vh;
+  font-weight: bold;
+}
+
+.modal_Contact .modal-body .form form .form_Button__Dismiss {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: btn;
+  text-align: center;
+  margin-top: 2vh;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .card_Description .card_Container__Image img {
+    height: 60vh;
+  }
+  .card_Description .card_Container__Text {
+    width: 50%;
+  }
+  .card_Information .information_Text {
+    height: 20%;
+  }
+  .card_Information .information_Text p {
+    margin: 1% 12% 2% 12%;
+  }
+  .card_Information .information_Text .btn_Info {
+    width: 40%;
+    height: 20%;
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+  }
+  .card_Contact .card_Container__Text {
+    width: 50%;
+  }
+  .card_Contact .card_Container__Text a {
+    font-size: 1.6rem;
+  }
+  .card_Contact .card_Container__Text .btn_Info {
+    width: 55%;
+    height: 20%;
+    font-size: 1.3rem;
+  }
+  .modal_Skill .modal-header {
+    height: 10vh;
+  }
+  .modal_Skill .modal-header button {
+    width: 5vw;
+  }
+  .modal_Skill .modal-body h2 {
+    font-size: 2.5rem;
+  }
+  .modal_Skill .modal-body li {
+    font-size: 1.2rem;
+  }
+  .modal_Skill .modal-footer p {
+    font-size: 2.5rem;
+  }
+  .modal_Skill .modal-footer .btn-primary, .modal_Skill .modal-footer .btn-secondary {
+    width: 40%;
+    height: 20%;
+    font-size: 1.2rem;
+  }
+  .modal_Contact .modal-header {
+    height: 10vh;
+  }
+  .modal_Contact .modal-header button {
+    width: 5vw;
+  }
+  .modal_Contact .modal-body h3 {
+    font-size: 2.4rem;
+  }
+  .modal_Contact .modal-body .form input {
+    height: 4vh;
+  }
+  .modal_Contact .modal-body .form select#select_Civility {
+    height: 4vh;
+  }
+  .modal_Contact .modal-body .form .form_Email, .modal_Contact .modal-body .form .form_Civility, .modal_Contact .modal-body .form .form_Phone {
+    margin-top: 3vh;
+  }
+  .modal_Contact .modal-body .form .form_Email label, .modal_Contact .modal-body .form .form_Civility label, .modal_Contact .modal-body .form .form_Phone label {
+    font-size: 1.6rem;
+  }
+  .modal_Contact .modal-body .form .form_Skill .form-floating label {
+    font-size: 1rem;
+  }
+  .modal_Contact .modal-body .form .btn-primary, .modal_Contact .modal-body .form .btn-secondary {
+    margin-top: 2vh;
+    width: 75%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card_Description .card_Container__Image img {
+    height: 60vh;
+  }
+  .card_Description .card_Container__Text {
+    width: 45%;
+  }
+  .card_Information .information_Text {
+    height: 20%;
+  }
+  .card_Information .information_Text p {
+    margin: 1% 12% 2% 12%;
+  }
+  .card_Information .information_Text .btn_Info {
+    width: 40%;
+    height: 20%;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+  .card_Contact .card_Container__Text {
+    width: 45%;
+  }
+  .card_Contact .card_Container__Text a {
+    font-size: 1.8rem;
+  }
+  .card_Contact .card_Container__Text .btn_Info {
+    width: 55%;
+    height: 20%;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+  .modal_Skill .modal-header {
+    height: 15vh;
+  }
+  .modal_Skill .modal-header img {
+    height: 15vh;
+    width: 15%;
+  }
+  .modal_Skill .modal-header button {
+    width: 5vw;
+  }
+  .modal_Skill .modal-body h2 {
+    font-size: 2.5rem;
+  }
+  .modal_Skill .modal-body li {
+    font-size: 1.3rem;
+  }
+  .modal_Skill .modal-footer p {
+    font-size: 2.5rem;
+  }
+  .modal_Skill .modal-footer .btn-primary, .modal_Skill .modal-footer .btn-secondary {
+    width: 40%;
+    height: 7vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .modal_Contact .modal-header {
+    height: 10vh;
+  }
+  .modal_Contact .modal-header img {
+    height: 130%;
+    width: 8vw;
+  }
+  .modal_Contact .modal-header button {
+    width: 5vw;
+  }
+  .modal_Contact .modal-body h3 {
+    font-size: 2.4rem;
+  }
+  .modal_Contact .modal-body .form form {
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: (45px)[8];
+        grid-template-rows: repeat(8, 45px);
+  }
+  .modal_Contact .modal-body .form form input {
+    height: 5vh;
+  }
+  .modal_Contact .modal-body .form .form_Email label, .modal_Contact .modal-body .form .form_Civility label, .modal_Contact .modal-body .form .form_Phone label {
+    font-size: 1.6rem;
+  }
+  .modal_Contact .modal-body .form .form_Skill .form-floating label {
+    font-size: 1rem;
+  }
+  .modal_Contact .modal-body .form .btn-primary, .modal_Contact .modal-body .form .btn-secondary {
+    margin-top: 2vh;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card_Description .card_Container__Image img {
+    height: 55vh;
+  }
+  .card_Description .card_Container__Text {
+    width: 35%;
+  }
+  .card_Information .information_Text {
+    height: 20%;
+  }
+  .card_Information .information_Text p {
+    margin: 1% 20% 2% 20%;
+  }
+  .card_Information .information_Text .btn_Info {
+    width: 25%;
+    height: 10%;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+  .card_Contact .card_Container__Text {
+    width: 35%;
+  }
+  .card_Contact .card_Container__Text .btn_Infos {
+    width: 25%;
+    height: 10%;
+  }
+  .modal_Skill .modal-header {
+    height: 10vh;
+  }
+  .modal_Skill .modal-header img {
+    width: 20%;
+    height: 10vh;
+  }
+  .modal_Skill .modal-footer .btn-primary, .modal_Skill .modal-footer .btn-secondary {
+    width: 40%;
+    height: 6vh;
+    font-size: 1.2rem;
+  }
+  .modal_Contact .modal-header img {
+    width: 20%;
+    height: 11vh;
+  }
+  .modal_Contact .modal-body .form .btn-primary, .modal_Contact .modal-body .form .btn-secondary {
+    margin-top: 2vh;
+    width: 10vw;
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

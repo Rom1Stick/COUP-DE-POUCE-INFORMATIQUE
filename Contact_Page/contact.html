@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coup de Pouce Informatique</title>
+  
+  <!-- FONT : GOOGLE : START   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
+  <!-- FONT : GOOGLE : END   -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Common/commonStyle.css">
+  <link rel="stylesheet" href="/Css_Home_Page/style.css">
+  <link rel="stylesheet" href="/Common/reset.css">
+</head>
+
+<body>
+  
+  <!-- HEADER : START -->
+  
+  <header class="header">
+    
+    <!-- NAV : START  -->
+          
+    <nav class="navbar">
+      
+      <ul class="sidenav">
+    
+        <li class="btn_nav active_lg">
+    
+          <a href="/index.html" class="header_Link">
+            Accueil
+          </a>
+        </li>
+        
+        <li class="btn_Nav">
+    
+          <a href="/Event_Page/event.html" class="header_Link btn_Nav__Event">
+            Évènements
+          </a>
+        </li>
+        
+        <li class="btn_Nav">
+    
+          <a href="#" class="header_Link btn_Nav__Contact active">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- NAV : END -->
+
+    <!-- TITLE : START  -->
+
+    <section class="title">
+    <div class="flux">
+      <div class="title_container"> 
+        
+        <h1>Formulaire pour nous contacter</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- TITLE : END  -->
+  
+  
+</header>
+
+<!-- HEADER : END -->
+
+<!-- MAIN : START -->
+
+<main>
+  
+  <!-- BREADCRUMB : START  -->
+  
+  <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb breadcrumb_Container">
+  
+  <ol class="breadcrumb">
+  
+  <li class="breadcrumb-item">
+  <a href="https://ville-cremieu.fr/" target="_blank">Cremieu</a>
+  </li>
+
+  <li class="breadcrumb-item">
+  <a href="https://ville-cremieu.fr/jeunesse/associations/annuaire-des-associations/" target="_blank">Association</a>
+  </li>
+
+  <li class="breadcrumb-item">
+    <a href="/index.html">Coup de Pouce Informatique</a>
+  </li>
+
+  <li class="breadcrumb-item active" aria-current="page">Contact</li>
+  </ol>
+  </section>
+  
+  <!-- BREADCRUMB : END  -->
+  
+                            <!-- First section : START  -->
+
+  <section class="form mt-3">
+    <form method="post" action="contact.html"> <!-- No php file-->
+
+    <!-- name -->
+
+          <div class="form_Name">
+
+            <label for="vorname" class="form_Name__Label">Votre Nom</label>
+
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Votre nom" 
+              required>
+
+          </div>
+
+    <!-- vorname  -->
+
+          <div class="form_Vorname">
+
+            <label for="vorname" class="form_Vorname__Label">Votre Prénom</label>
+
+            <input 
+              type="text" 
+              id="vorname" 
+              name="vorname" 
+              placeholder="Votre prénom" 
+              required>
+
+          </div>
+
+    <!-- email  -->
+
+      <div class="form_Email">
+        
+        <label for="email" class="form_Email__Label">Adresse Email :</label>
+
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Votre adresse Email" 
+          required>
+
+      </div>
+
+    <!-- civility -->
+
+      <div class="form_Civility">
+
+        <label for="select_Civility">Genre :</label>
+
+        <select name="select_Civility" id="select_Civility">
+
+          <option value="civility_Madam">Madame</option>
+          <option value="civility_Sir">Monsieur</option>
+          <option value="civility_Other">Autre</option>
+        </select>
+      </div>
+
+    <!-- phone  -->
+
+      <div class="form_Phone">
+
+        <label for="phone">Téléphone :</label>
+
+        <input 
+          type="tel" 
+          id="tel" 
+          name="phone" 
+          placeholder="Votre numéro"
+          required>
+      </div>
+
+    <!-- category -->
+
+    <div class="form_Category">
+
+      <label for="select_Category">Catégorie :</label>
+
+      <select name="select_Category" id="select_Category">
+
+        <option value="Category_Internet">Internet</option>
+        <option value="Category_Messaging">Messagerie</option>
+        <option value="Category_Peripheral">Périphériques</option>
+        <option value="Category_Office">Pack-office</option>
+        <option value="Category_Maj">Mise à jour</option>
+        <option value="Category_Advertisement">Annonces</option>
+        <option value="Category_Other">Autre</option>
+
+      </select>
+    </div>
+
+
+    <!-- skills  -->
+
+      <div class="form_Skill">
+
+        <div class="form-floating">
+          <textarea class="form-control" 
+            placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Comment pouvons nous vous aider ?</label>
+        </div>
+      </div>
+
+
+          <!-- Button form submit -->
+
+        <div class="form_Button__Submit">
+
+          <button 
+            class="btn btn-primary" 
+            id="form_Button__Submit" 
+            type="submit">
+            Envoyer
+          </button>
+        </div>
+
+          <!-- Button form reset -->
+          
+        <div class="form_Button__Reset">
+
+          <button   
+            class="btn btn-secondary"
+            id="form_Button__Reset"
+            type="reset"             
+            data-bs-dismiss="modal">
+            Annuler
+          </button>
+        </div>
+
+    </form>
+  </section> 
+
+                            <!-- First section : END  -->
+
+
+</main>
+
+<!-- MAIN : END  -->
+
+<!-- FOOTER : START  -->
+
+<footer>
+
+  <div class="footer_Container">
+
+    <div class="footer_Container__Img2">
+
+      <a href="https://petitescitesdecaractere.com/fr/nos-petites-cites-de-caractere/cremieu"
+        target="_blank">
+
+        <img src="/ressources/images/footer_logo_petitesciteescaractere.png" 
+        alt="les plus beaux de tours de france"
+        class="footer_Container__Img2">
+      </a>
+    </div>
+
+    <div class="footer_Container__Img1">
+
+      <a href="https://www.plusbeauxdetours.com/tous-les-plus-beaux-detours/detour-par-cremieu-en-isere/"
+        target="_blank">
+
+        <img src="/ressources/images/footer_logo_lesplusbeauxdetoursdefrance.png" 
+        alt="les plus beaux de tours de france"
+        class="footer_Img1">
+      </a>
+    </div>
+
+      <div class="footer_Container__Address">
+        
+        <p>
+          <strong>
+            
+            Coup de Pouce Informatique<br/>
+          </strong>
+
+            <a href="/index.html">ACCUEIL / </a>
+            <a href="/Contact_Page/contact.html">CONTACT / </a>
+            <a href="/Event_Page/event.html">ACTUALITE</a><br/>
+        </p>
+      </div>
+    </div>
+</footer>
+
+<!-- FOOTER : END  -->
+                    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
