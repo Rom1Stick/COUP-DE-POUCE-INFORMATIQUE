@@ -1,0 +1,10 @@
+@mixin btn-nav {
+  display: block;
+  text-align: center;
+  width: auto;
+  height: 8vh;
+  font-size: 0.75rem;
+  font-family: $police-btn;
+  color: $color-btn;
+  background-color: $azure;
+}

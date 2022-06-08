@@ -1,120 +1,30 @@
-// MODAL : CONTACT
+// SECTION
 
-.modal_Contact {
-  height: 100vh;
+.card {
 
-  .modal-header img {
-    width: 15%;
-    height: 130%;
+  .img_Card {
+    height: 35vh;
   }
+  .card-body {
 
-  h3 {
-    color: $white;
-    font-size: 1.3rem;
-  }
+    .card-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+    }
 
-  .modal-body {
-    background-color: $cyan;
+    .card-text {
+      font-size: 0.8rem;
+      text-align: center;
 
-    .form {
-      form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 40px);
-        grid-template-areas: 
-        "name vorname"
-        "email email"
-        "email email"
-        "civility civility"
-        "phone phone"
-        "skillTitle skillTitle"
-        "skillTitle skillTitle"
-        "skillTitle skillTitle"
-        "btnSubmit btn";
-        text-align: center;
-          
-        input {
-          @include input;
-        }
-          
-        label {
-          @include label;
+      
+      &:last-child {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
 
-        }
-        
-        .form_Name {
-          grid-area: name;
-          margin: 5% 0;
-          
-          input {
-            width: 95%;
-          }
-        }
-        
-        .form_Vorname{
-          grid-area: vorname;
-          margin: 5% 0;
-          
-          input {
-            width: 95%;
-          }
-        }
-        
-        .form_Email{
-          grid-area: email;
-          margin-top: 3vh;
-          
-          input{
-            width: 80%;
-          }
-        }
-        
-        .form_Civility {
-          grid-area: civility;
-          margin-top: 4vh;
-          
-          select {
-            width: 50%;
-            height: 6vh
-          }
-        }
-        
-        .form_Phone {
-          grid-area: phone;
-          margin-top: 6vh;
-
-          input {
-            width: 45%;
-          }
-        }
-        .form_Skill {
-          grid-area: skillTitle;
-          margin: 5vh 5% 4vh 5%;
-          
-          textarea {
-            margin: 5% auto;
-            height: 70%;
-          }
-          
-          label {
-            color: $azure_Bold;
-            font-size: 0.75rem;
-            font-weight: 800;
-          }
-        }
-        .form_Button__Submit {
-          grid-area: btnSubmit;
-          text-align: center;
-          margin-top: 2vh;
-          font-weight: bold;
-        }
-        
-        .form_Button__Dismiss {
-          grid-area: btn;
-          text-align: center;
-          margin-top: 2vh;
-          font-weight: bold;
-        }
+      small {
+        color: $azure_Bold;
       }
     }
   }

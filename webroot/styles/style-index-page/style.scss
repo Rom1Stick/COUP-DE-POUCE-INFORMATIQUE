@@ -1,6 +1,21 @@
 //tools
   @import "scss/tools/variables";
   @import "scss/tools/mixin";
+//general
+  @import "scss/general/reset";
+  //tools
+    @import "scss/general/tools/variables";
+    @import "scss/general/tools/mixin";
+  //layout
+    @import "scss/general/layout/flux";
+    @import "scss/general/layout/body";
+    @import "scss/general/layout/header";
+    @import "scss/general/layout/footer";
+  //responsive
+    @import "scss/general/responsive/phone";
+    @import "scss/general/responsive/tablet";
+    @import "scss/general/responsive/laptop";
+    @import "scss/general/responsive/big-laptop";
 //layout
   @import "scss/layout/first-section";
   @import "scss/layout/second-section";
